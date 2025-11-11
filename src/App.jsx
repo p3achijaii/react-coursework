@@ -1,5 +1,5 @@
 import "./App.css";
-import SimpleBtn from "../Components/SimpleBtn.jsx";
+import SimpleBtn from "./components/SimpleBtn.jsx";
 
 function App() {
   return (
