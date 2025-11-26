@@ -22,6 +22,9 @@ function Navbar() {
             <a href="#">Contact</a>
           </li>
           <li>
+            <a href="#">Saved</a>
+          </li>
+          <li>
             <a href="#">Sign In</a>
           </li>
         </ul>
