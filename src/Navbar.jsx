@@ -1,6 +1,6 @@
 function Navbar() {
   return (
-    <header>
+    <header className="navbar">
       <nav>
         <ul>
           <li>
