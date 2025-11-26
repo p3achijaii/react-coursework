@@ -1,11 +1,10 @@
 import "./App.css";
-import SimpleBtn from "./components/SimpleBtn.jsx";
 
 function App() {
   return (
     <>
       <div>
-        <SimpleBtn />
+        <h1>Hello, React!</h1>
       </div>
     </>
   );
