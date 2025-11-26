@@ -33,19 +33,84 @@
       }
     },
     {
-      "id": "prop3"
+      "id": "prop3",
+      "type": "House",
+      "bedrooms": 4,
+      "price": 895000,
+      "tenure": "Freehold",
+      "description": "A beautifully presented four bedroom detached family home located in a quiet residential cul-de-sac close to Darrick Wood schools and within easy reach of Orpington Station. The property offers a spacious dual-aspect lounge, separate dining room, modern fitted kitchen, ground floor study and utility room. Upstairs you will find four generous bedrooms, including a master with en-suite, and a contemporary family bathroom. Additional features include a large landscaped rear garden, garage, off-street parking and gas central heating.",
+      "location": "St. John’s Avenue, Orpington BR6",
+      "picture": "images/prop3pic1small.jpg",
+      "url": "properties/prop3.html",
+      "added": {
+        "month": "August",
+        "day": 8,
+        "year": 2022
+      }
     },
     {
-      "id": "prop4"
+      "id": "prop4",
+      "type": "Flat",
+      "bedrooms": 1,
+      "price": 275000,
+      "tenure": "Leasehold",
+      "description": "A bright and modern one bedroom top-floor apartment ideally situated for local shops, restaurants and Petts Wood Station. The property features an open-plan living room with a contemporary fitted kitchen, a spacious double bedroom with fitted wardrobes and a stylish bathroom. Additional benefits include gas central heating, double glazing throughout, and allocated parking. Ideal for first-time buyers or investors.",
+      "location": "Lakeswood Road, Petts Wood BR5",
+      "picture": "images/prop4pic1small.jpg",
+      "url": "properties/prop4.html",
+      "added": {
+        "month": "July",
+        "day": 3,
+        "year": 2022
+      }
     },
     {
-      "id": "prop5"
+      "id": "prop5",
+      "type": "Maisonette",
+      "bedrooms": 2,
+      "price": 325000,
+      "tenure": "Leasehold",
+      "description": "A well-maintained two bedroom first-floor maisonette located within easy reach of both Orpington High Street and local transport links. The property includes a generous lounge, a fitted kitchen, two good-sized bedrooms and a modern bathroom. Benefits include a private rear garden, loft storage, double glazing and gas central heating.",
+      "location": "Tubbenden Lane, Orpington BR6",
+      "picture": "images/prop5pic1small.jpg",
+      "url": "properties/prop5.html",
+      "added": {
+        "month": "June",
+        "day": 21,
+        "year": 2022
+      }
     },
     {
-      "id": "prop6"
+      "id": "prop6",
+      "type": "House",
+      "bedrooms": 5,
+      "price": 1250000,
+      "tenure": "Freehold",
+      "description": "An impressive five bedroom detached family residence set on a prestigious road within close proximity to Bromley South and highly regarded schools. The home offers extensive living space, including three reception rooms, a luxury open-plan kitchen/breakfast area, utility room and ground-floor cloakroom. The first floor comprises five well-proportioned bedrooms, two with en-suites, plus a spacious family bathroom. Features include a large rear garden, double garage and off-street parking for multiple cars.",
+      "location": "Ridgeway Drive, Bromley BR2",
+      "picture": "images/prop6pic1small.jpg",
+      "url": "properties/prop6.html",
+      "added": {
+        "month": "May",
+        "day": 15,
+        "year": 2022
+      }
     },
     {
-      "id": "prop7"
+      "id": "prop7",
+      "type": "Flat",
+      "bedrooms": 2,
+      "price": 350000,
+      "tenure": "Leasehold",
+      "description": "A spacious two bedroom first-floor flat set within a well-maintained purpose-built block close to bus routes and local amenities. The property features a large lounge/dining area, a fitted kitchen, two double bedrooms and a modern bathroom. Additional advantages include communal gardens, residents’ parking, secure entry system and double glazing.",
+      "location": "Church Hill, Orpington BR6",
+      "picture": "images/prop7pic1small.jpg",
+      "url": "properties/prop7.html",
+      "added": {
+        "month": "April",
+        "day": 9,
+        "year": 2022
+      }
     }
   ]
 }
