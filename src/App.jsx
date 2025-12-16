@@ -5,7 +5,6 @@ import Home from "./Home.jsx"
 import Property from "./Property.jsx"
 import Footer from "./Footer.jsx"
 
-
 function App() {
   const [favourites, setFavourites] = useState([]);
   const [theme, setTheme] = useState("light");
