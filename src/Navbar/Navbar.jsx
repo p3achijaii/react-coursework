@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import styles from "./Navbar.module.css";
 
 function Navbar({ favourites, theme, setTheme }) {
   const [open, setOpen] = useState(false);
