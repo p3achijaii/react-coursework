@@ -1,59 +1,44 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
-import styles from "./Navbar.module.css";
+import { useState } from 'react'
+import styles from './Navbar.module.css'
 
 function Navbar({ favourites, theme, setTheme }) {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false)
 
   return (
-    <header
-      className={styles.navbar}
-      role="navigation"
-      aria-label="Main navigation"
-    >
-      <Link to="/" className={styles.logo}>
-        <img
-          src="/HoneyHomes.png"
-          alt="HoneyHomes logo"
-          className={styles.logoImg}
-        />
-        <span className={styles.brand}>HoneyHomes</span>
-      </Link>
+    <header className={styles.navbar} role="navigation" aria-label="Main navigation">
+      <div className={styles.logo}>🍯 HoneyHomes</div>
 
-      <nav className={styles.nav}>
+      <nav className={styles.links}>
         <a href="#">Buy</a>
         <a href="#">Rent</a>
         <a href="#">Sell</a>
       </nav>
 
       <div className={styles.actions}>
-        <button
-          onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-          aria-label="Toggle theme"
-          className={styles.themeBtn}
-        >
-          {theme === "light" ? "🌙" : "☀️"}
+        <button onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')} aria-label="Toggle theme">
+          {theme === 'light' ? '🌙' : '☀️'}
         </button>
 
         <div
           className={styles.fav}
           onMouseEnter={() => setOpen(true)}
           onMouseLeave={() => setOpen(false)}
-          aria-label="Saved properties"
+          aria-label="Favourites"
         >
           ♥ {favourites.length}
           {open && (
             <div className={styles.dropdown}>
-              {favourites.length === 0 && <p>No saved homes</p>}
-              {favourites.map((f) => (
-                <div key={f.id}>£{f.price}</div>
+              {favourites.length === 0 && <p>No favourites yet</p>}
+              {favourites.map(f => (
+                <p key={f.id}>£{f.price}</p>
               ))}
             </div>
           )}
         </div>
       </div>
     </header>
-  );
+  )
 }
+
 
 export default Navbar;
