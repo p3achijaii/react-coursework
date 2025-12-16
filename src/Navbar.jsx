@@ -11,7 +11,7 @@ function Navbar({ favourites, theme, setTheme }) {
     >
       <div className={styles.inner}>
         <img
-          src="src\assets\images\HoneyHomes.png"
+          src="/HoneyHomes.png"
           alt="HoneyHomes logo"
           className={styles.logoImg}
         />
