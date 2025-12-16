@@ -5,38 +5,42 @@ function Navbar({ favourites, theme, setTheme }) {
 
   return (
     <header
-      className="styles.navbar"
+      className={styles.navbar}
       role="navigation"
       aria-label="Main navigation"
     >
-      <div className="styles.inner">
-        <img src="src\assets\images\HoneyHomes.png" alt="HoneyHomes logo" />
-        <span>HoneyHomes</span>
+      <div className={styles.inner}>
+        <img
+          src="src\assets\images\HoneyHomes.png"
+          alt="HoneyHomes logo"
+          className={styles.logoImg}
+        />
+        <span className={styles.brand}>HoneyHomes</span>
       </div>
-      <nav className="styles.nav">
+      <nav className={styles.nav}>
         <a href="#">Buy</a>
         <a href="#">Rent</a>
         <a href="#">Sell</a>
       </nav>
 
-      <div className="styles.actions">
+      <div className={styles.actions}>
         <button
           onClick={() => setTheme(theme === "light" ? "dark" : "light")}
           aria-label="Toggle theme"
-          className="styles.themeBtn"
+          className={styles.themeBtn}
         >
           {theme === "light" ? "🌙" : "☀️"}
         </button>
 
         <div
-          className="styles.fav"
+          className={styles.fav}
           onMouseEnter={() => setOpen(true)}
           onMouseLeave={() => setOpen(false)}
           aria-label="Saved properties"
         >
           ♥ {favourites.length}
           {open && (
-            <div className="styles.dropdown">
+            <div className={styles.dropdown}>
               {favourites.length === 0 && <p>No saved homes</p>}
               {favourites.map((f) => (
                 <div key={f.id}>£{f.price}</div>
