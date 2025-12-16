@@ -10,7 +10,7 @@ function Navbar({ favourites, theme, setTheme }) {
       aria-label="Main navigation"
     >
       <div className="styles.inner">
-        <img src="" alt="HoneyHomes logo" />
+        <img src="src\assets\images\HoneyHomes.png" alt="HoneyHomes logo" />
         <span>HoneyHomes</span>
       </div>
       <nav className="styles.nav">
