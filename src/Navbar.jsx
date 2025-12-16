@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Navbar({ favourites, theme, setTheme }) {
   const [open, setOpen] = useState(false);
@@ -9,14 +10,15 @@ function Navbar({ favourites, theme, setTheme }) {
       role="navigation"
       aria-label="Main navigation"
     >
-      <div className={styles.inner}>
+      <Link to="/" className={styles.logo}>
         <img
           src="/HoneyHomes.png"
           alt="HoneyHomes logo"
           className={styles.logoImg}
         />
         <span className={styles.brand}>HoneyHomes</span>
-      </div>
+      </Link>
+
       <nav className={styles.nav}>
         <a href="#">Buy</a>
         <a href="#">Rent</a>
