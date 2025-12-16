@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navbar from "./Navbar.jsx";
+import Navbar from "./Navbar/Navbar.jsx";
 
 function App() {
   const [favourites, setFavourites] = useState([]);
