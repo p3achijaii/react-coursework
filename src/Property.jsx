@@ -1,5 +1,3 @@
-function Property(){
-
-}
+function Property(){}
 
 export default Property;
