@@ -3,7 +3,7 @@
 }
 
 :root[data-theme="dark"] {
-  --cream: ;
+  --cream: #313133;
 }
 
 body {
