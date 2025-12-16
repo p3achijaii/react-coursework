@@ -34,17 +34,17 @@
     },
     {
       "id": "prop3",
-      "type": "House",
-      "bedrooms": 4,
-      "price": 895000,
+      "type": "Cottage",
+      "bedrooms": 2,
+      "price": 325000,
       "tenure": "Freehold",
-      "description": "A beautifully presented four bedroom detached family home located in a quiet residential cul-de-sac close to Darrick Wood schools and within easy reach of Orpington Station. The property offers a spacious dual-aspect lounge, separate dining room, modern fitted kitchen, ground floor study and utility room. Upstairs you will find four generous bedrooms, including a master with en-suite, and a contemporary family bathroom. Additional features include a large landscaped rear garden, garage, off-street parking and gas central heating.",
-      "location": "St. John’s Avenue, Orpington BR6",
+      "description": "Charming two bedroom period cottage nestled in a quiet village location. The property features exposed wooden beams, a cosy living room with a fireplace, a country-style kitchen, and a private cottage garden. Ideal for first-time buyers or those seeking a peaceful rural lifestyle with easy access to nearby market towns.",
+      "location": "High Street, Chilham, Canterbury CT4",
       "picture": "images/prop3pic1small.jpg",
       "url": "properties/prop3.html",
       "added": {
         "month": "August",
-        "day": 8,
+        "day": 5,
         "year": 2022
       }
     },
@@ -66,17 +66,17 @@
     },
     {
       "id": "prop5",
-      "type": "Maisonette",
-      "bedrooms": 2,
-      "price": 325000,
+      "type": "Apartment",
+      "bedrooms": 1,
+      "price": 285000,
       "tenure": "Leasehold",
-      "description": "A well-maintained two bedroom first-floor maisonette located within easy reach of both Orpington High Street and local transport links. The property includes a generous lounge, a fitted kitchen, two good-sized bedrooms and a modern bathroom. Benefits include a private rear garden, loft storage, double glazing and gas central heating.",
-      "location": "Tubbenden Lane, Orpington BR6",
+      "description": "Modern one bedroom apartment located in a contemporary development close to transport links. The property offers an open-plan kitchen and living space, a private balcony, and secure entry system. Perfect for professionals or investors seeking low-maintenance city living.",
+      "location": "Dock Street, Leeds LS10",
       "picture": "images/prop5pic1small.jpg",
       "url": "properties/prop5.html",
       "added": {
-        "month": "June",
-        "day": 21,
+        "month": "July",
+        "day": 19,
         "year": 2022
       }
     },
@@ -98,17 +98,17 @@
     },
     {
       "id": "prop7",
-      "type": "Flat",
-      "bedrooms": 2,
-      "price": 350000,
-      "tenure": "Leasehold",
-      "description": "A spacious two bedroom first-floor flat set within a well-maintained purpose-built block close to bus routes and local amenities. The property features a large lounge/dining area, a fitted kitchen, two double bedrooms and a modern bathroom. Additional advantages include communal gardens, residents’ parking, secure entry system and double glazing.",
-      "location": "Church Hill, Orpington BR6",
+      "type": "Detached House",
+      "bedrooms": 5,
+      "price": 1250000,
+      "tenure": "Freehold",
+      "description": "An impressive five bedroom detached family home set within a prestigious residential area. The property boasts spacious living accommodation, a large landscaped garden, double garage, and high-specification kitchen. Ideally suited for families seeking luxury living with excellent school catchments nearby.",
+      "location": "Oakwood Drive, Wilmslow SK9",
       "picture": "images/prop7pic1small.jpg",
       "url": "properties/prop7.html",
       "added": {
-        "month": "April",
-        "day": 9,
+        "month": "June",
+        "day": 2,
         "year": 2022
       }
     }
