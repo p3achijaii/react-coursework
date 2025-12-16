@@ -40,5 +40,4 @@ function Navbar({ favourites, theme, setTheme }) {
   )
 }
 
-
 export default Navbar;
