@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar.jsx";
 import Home from "./components/HomePage.jsx";
-import Property from "./Property.jsx";
 import Footer from "./components/Footer.jsx";
 
 function App() {
