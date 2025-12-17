@@ -42,7 +42,7 @@ function Navbar() {
           {/* MOBILE MENU BUTTON */}
           <button
             className={styles.mobileMenuBtn}
-            onClick = {() => setIsOpen(!IsOpen)}
+            onClick={() => setIsOpen(!IsOpen)}
             aria-label="Toggle Menu"
           >
             ☰
@@ -50,8 +50,37 @@ function Navbar() {
         </div>
       </div>
 
-      {/*MOBILE MENU */}
-      
+      {/* MOBILE MENU */}
+      {isOpen && (
+        <div className={styles.mobileMenu}>
+          <div className={styles.mobileMenuContent}>
+            {links.map((link) => (
+              <Link
+                key={link.href}
+                to={link.href}
+                onClick={() => setIsOpen(false)}
+                className={
+                  location.pathname === link.href
+                    ? styles.mobileLinkActive
+                    : styles.mobileLinkActive
+                }
+              >
+                {link.label}
+              </Link>
+            ))}
+
+            <div className={styles.mobileCta}>
+              <Link
+                to="/contact"
+                onClick={() => setIsOpen(false)}
+                className={$(styles.fullWidthBtn)}
+              >
+                Contact Us
+              </Link>
+            </div>
+          </div>
+        </div>
+      )}
     </nav>
   );
 }
