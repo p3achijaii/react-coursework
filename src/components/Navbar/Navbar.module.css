@@ -87,3 +87,24 @@
 .linkInactive:hover {
   color: var(--color-terracotta-500);
 }
+
+/* MOBILE NAVIGATION */
+.mobileMenuBtn {
+  display: block;
+  padding: 0.5rem;
+  border-radius: var(--radius-lg);
+  color: var(--color-stone-600);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.mobileMenuBtn:hover {
+  background-color: var(--color-cream-200);
+}
+
+@media (min-width: 768px) {
+  .mobileMenuBtn {
+    display: none;
+  }
+}
