@@ -38,8 +38,20 @@ function Navbar() {
               </Link>
             ))}
           </div>
+
+          {/* MOBILE MENU BUTTON */}
+          <button
+            className={styles.mobileMenuBtn}
+            onClick = {() => setIsOpen(!IsOpen)}
+            aria-label="Toggle Menu"
+          >
+            ☰
+          </button>
         </div>
       </div>
+
+      {/*MOBILE MENU */}
+      
     </nav>
   );
 }
