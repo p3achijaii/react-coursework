@@ -16,32 +16,29 @@ function Navbar() {
   return (
     <nav className={styles.nav} aria-label="Main navigation">
       <div className={styles.container}>
-        <Link to="/" className={styles.logo}>
-          <div className={styles.logoIcon}>
-            <Home className={styles.icon} />
-          </div>
-          <span className={styles.logoText}>HoneyHomes</span>
-        </Link>
-      </div>
-
-      <div className={styles.link}>
-        {links.map((link) => (
-          <Link
-            key={link.href}
-            to={link.href}
-            className={
-              location.pathname === link.href
-                ? styles.linkActivate
-                : styles.link
-            }
-          >
-            {link.label}
+        <div className={styles.content}>
+          {/* LOGO */}
+          <Link to="/" className={styles.logo}>
+            <span className={styles.logoText}>🍯HoneyHomes</span>
           </Link>
-        ))}
 
-        <Link to="/contact" className={styles.contactBtn}>
-          Contact Us
-        </Link>
+          {/* DESKTOP NAVIGATION */}
+          <div className={styles.desktopNav}>
+            {links.map((link) => (
+              <Link
+                key={link.href}
+                to={link.href}
+                className={
+                  location.pathname === link.href
+                    ? styles.linkActive
+                    : styles.linkInactive
+                }
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
+        </div>
       </div>
     </nav>
   );
