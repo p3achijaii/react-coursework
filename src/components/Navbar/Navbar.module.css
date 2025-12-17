@@ -5,7 +5,7 @@
   width: 100%;
   background-color: rgba(250, 247, 242, 0.8);
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid var(--color-cream-200);
 }
 
 .container {
@@ -35,7 +35,7 @@
 }
 
 .logoIcon {
-  background-color: var(--primary);
+  background-color: var(--color-terracotta-500);
   padding: 0.5rem;
   border-radius: var(--radius-xl);
   display: flex;
@@ -53,7 +53,7 @@
   font-family: var(--font-display);
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--text-primary);
+  color: var(--color-stone-800);
 }
 
 /* DESKTOP NAVIGATION */
@@ -77,13 +77,13 @@
 }
 
 .linkActive {
-  color: var(--primary);
+  color: var(--color-terracotta-500);
 }
 
 .linkInactive {
-  color: var(--text-secondary);
+  color: var(--color-stone-600);
 }
 
 .linkInactive:hover {
-  color: var(--primary);
+  color: var(--color-terracotta-500);
 }
