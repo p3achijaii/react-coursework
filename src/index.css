@@ -1,33 +1,52 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap');
 
 :root {
   --color-white: #ffffff;
   --color-black: #000000;
+  
+  --color-terracotta-50: #fdf8f3;
+  --color-terracotta-100: #fbf1e7;
+  --color-terracotta-200: #f7e3cf;
+  --color-terracotta-300: #f3d5b7;
+  --color-terracotta-400: #eec79f;
+  --color-terracotta-500: #d4a574;
+  --color-terracotta-600: #aa845d;
+  --color-terracotta-700: #7f6346;
+  --color-terracotta-800: #55422e;
+  --color-terracotta-900: #2a2117;
 
-  --primary: #d4a574;
-  --primary-light: #f7e3cf;
-  --primary-dark: #7f6346;
+  --color-sage-50: #f0f4f2;
+  --color-sage-100: #e1e9e5;
+  --color-sage-200: #c3d3cc;
+  --color-sage-300: #a5bdb3;
+  --color-sage-400: #87a799;
+  --color-sage-500: #6b8e7f;
+  --color-sage-600: #567266;
+  --color-sage-700: #40554c;
+  --color-sage-800: #2b3933;
+  --color-sage-900: #151c19;
 
-  --secondary: #6b8e7f;
-  --secondary-light: #c3d3cc;
-  --secondary-dark: #40554c;
+  --color-cream-50: #fdfcfb;
+  --color-cream-100: #faf7f2;
+  --color-cream-200: #f5efe6;
+  --color-cream-300: #efe6d9;
 
-  --bg-main: #faf7f2;
-  --bg-card: #f0f4f2;
-  --bg-section: #fdf8f3;
-
-  --text-primary: #292524;
-  --text-secondary: #57534e;
-  --text-light: #fafaf9;
-
-  --border: #d6d3d1;
+  --color-stone-50: #fafaf9;
+  --color-stone-100: #f5f5f4;
+  --color-stone-200: #e7e5e4;
+  --color-stone-300: #d6d3d1;
+  --color-stone-400: #a8a29e;
+  --color-stone-500: #78716c;
+  --color-stone-600: #57534e;
+  --color-stone-700: #44403c;
+  --color-stone-800: #292524;
+  --color-stone-900: #1c1917;
 
   --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1),
-    0 4px 6px -4px rgb(0 0 0 / 0.1);
-  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1),
-    0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.05);
 
   --radius-sm: 0.125rem;
@@ -38,8 +57,9 @@
   --radius-3xl: 1.5rem;
   --radius-full: 9999px;
 
-  --font-sans: "Inter", sans-serif;
-  --font-display: "Playfair Display", serif;
+  /* Typography */
+  --font-sans: 'Inter', sans-serif;
+  --font-display: 'Playfair Display', serif;
 }
 
 * {
@@ -49,37 +69,33 @@
 }
 
 body {
-  background-color: var(--bg-main);
-  color: var(--text-primary);
+  background-color: var(--color-cream-100);
+  color: var(--color-stone-800);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-display);
-  color: var(--text-primary);
+  color: var(--color-stone-800);
 }
 
+/* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: var(--bg-card);
+  background-color: var(--color-cream-200);
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--primary);
+  background-color: var(--color-terracotta-400);
   border-radius: var(--radius-full);
-  border: 2px solid var(--bg-card);
+  border: 2px solid var(--color-cream-200);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: var(--primary-dark);
+  background-color: var(--color-terracotta-500);
 }
