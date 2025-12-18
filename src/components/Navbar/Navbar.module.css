@@ -62,3 +62,34 @@
   font-weight: 700;
   color: var(--color-stone-800);
 }
+
+.desktopNav {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .desktopNav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+
+.link {
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+  text-decoration: none;
+}
+
+.linkActive {
+  color: var(--color-terracotta-500);
+}
+
+.linkInactive {
+  color: var(--color-stone-600);
+}
+
+.linkInactive:hover {
+  color: var(--color-terracotta-500);
+}
