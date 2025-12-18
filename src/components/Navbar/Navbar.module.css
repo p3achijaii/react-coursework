@@ -95,10 +95,11 @@
 }
 
 .mobileMenuBtn {
-  display: block;
-  padding: 0.5rem;
-  border-radius: var(--radius-lg);
-  color: var(--color-stone-600);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem;
+  border-radius: var(--radius-xl);
   background: none;
   border: none;
   cursor: pointer;
