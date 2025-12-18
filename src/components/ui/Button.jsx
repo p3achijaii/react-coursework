@@ -21,6 +21,7 @@ function ButtonComponent(
       {...props}
     >
       {isLoading && <div className={styles.spinner} />}
+      {children}
     </button>
   );
 }
