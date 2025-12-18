@@ -19,7 +19,7 @@ function Navbar() {
         <div className={styles.content}>
           {/* LOGO */}
           <Link to="/" className={styles.logo}>
-            <span className={styles.logoText}>🍯HoneyHomes</span>
+            <span className={styles.logoText}>🍯 HoneyHomes</span>
           </Link>
 
           {/* DESKTOP NAVIGATION */}
