@@ -23,6 +23,20 @@ function HomePage() {
           />
           <div className={styles.heroOverlay} />
         </div>
+
+        <div className={styles.heroContent}>
+          <div className={styles.heroTextContainer}>
+            <h1 className={styles.heroTitle}>
+              Find your place <br />
+              <span className={styles.hightlight}>to call home.</span>
+            </h1>
+
+            <p className={styles.heroDescription}>
+              Discover a curated collection of homes that blend comfort, style,
+              and nature. Your dream sanctuary awaits.
+            </p>
+          </div>
+        </div>
       </section>
     </div>
   );
