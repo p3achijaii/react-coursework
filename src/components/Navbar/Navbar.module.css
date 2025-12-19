@@ -1,8 +1,8 @@
+/* NAVBAR */
 .nav {
   position: sticky;
   top: 0;
   z-index: 50;
-  width: 50;
   width: 100%;
   background-color: rgba(250, 247, 242, 0.8);
   backdrop-filter: blur(12px);
@@ -34,6 +34,7 @@
   height: 5rem;
 }
 
+/* LOGO */
 .logo {
   display: flex;
   align-items: center;
@@ -63,6 +64,7 @@
   color: var(--color-stone-800);
 }
 
+/* DESKTOP NAV */
 .desktopNav {
   display: none;
 }
@@ -94,6 +96,7 @@
   color: var(--color-terracotta-500);
 }
 
+/* MOBILE MENU BUTTON */
 .mobileMenuBtn {
   display: flex;
   align-items: center;
@@ -116,30 +119,42 @@
   }
 }
 
+/* MOBILE MENU (SMOOTH OPEN/CLOSE) */
 .mobileMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
   background-color: var(--color-cream-100);
-  border-bottom: 1px solid var(--color-cream-100);
   overflow: hidden;
-  animation: slideDown 0.3s ease-out;
+  z-index: 40;
+
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease,
+    visibility 0.25s ease;
 }
 
-@keyframes slideDown {
-  from {
-    opacity: 0;
-    max-height: 0;
-  }
-  to {
-    opacity: 1;
-    max-height: 500px;
-  }
+.menuOpen {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
 }
 
-@media (min-widht: 768px) {
+.menuClosed {
+  opacity: 0;
+  transform: translateY(-12px);
+  visibility: hidden;
+  pointer-events: none;
+}
+
+@media (min-width: 768px) {
   .mobileMenu {
     display: none;
   }
 }
 
+/* MOBILE MENU CONTENT */
 .mobileMenuContent {
   padding: 0.5rem 1rem 1.5rem;
   display: flex;
