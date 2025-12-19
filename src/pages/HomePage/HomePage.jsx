@@ -70,15 +70,23 @@ function HomePage() {
               },
               {
                 icon: Shield,
-                title: "",
-                desc: "",
+                title: "Trusted Agents",
+                desc: "Work with experienced professionals who prioritise your needs and peace of mind.",
               },
               {
                 icon: Clock,
-                title: "",
-                desc: "",
+                title: "Seamless Process",
+                desc: "From viewing to closing, we make the journey to your new home smooth and stress-free.",
               },
-            ]}
+            ].map((feature, index) => (
+              <div key={index} className={styles.featureCard}>
+                <div className={styles.featureIconWrapper}>
+                  <feature.icon className={styles.featureIcon} />
+                </div>
+                <h3 className={styles.featureTitle}>{feature.title}</h3>
+                <p className={styles.featureDesc}>{feature.desc}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
