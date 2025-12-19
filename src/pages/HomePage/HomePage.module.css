@@ -163,3 +163,21 @@
   justify-content: center;
   margin-bottom: 1.5rem;
 }
+
+.featureIcon {
+  height: 1.75rem;
+  width: 1.75rem;
+  color: var(--color-sage-600);
+}
+
+.featureTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-stone-800);
+  margin-bottom: 0.75rem;
+}
+
+.featureDesc {
+  color: var(--color-stone-600);
+  line-height: 1.6;
+}
