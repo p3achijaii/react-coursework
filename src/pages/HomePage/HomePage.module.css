@@ -60,3 +60,20 @@
   margin-bottom: 1.5rem;
   line-height: 1.1;
 }
+
+@media (min-width: 768px) {
+  .heroTitle {
+    font-size: 4.5rem;
+  }
+}
+
+.highlight {
+  color: var(--color-terracotta-400);
+}
+
+.heroDescription {
+  font-size: 1.25rem;
+  color: var(--color-cream-200);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
