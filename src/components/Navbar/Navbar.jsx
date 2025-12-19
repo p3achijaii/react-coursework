@@ -65,33 +65,36 @@ function Navbar() {
       </div>
 
       {/* MOBILE NAVIGATION */}
-      {isOpen && (
-        <div className={styles.mobileMenu}>
-          <div className={styles.mobileMenuContent}>
-            {links.map((link) => (
-              <Link
-                key={link.href}
-                to={link.href}
-                onClick={() => setIsOpen(false)}
-                className={cn(
-                  styles.mobileLink,
-                  location.pathname === link.href
-                    ? styles.mobileLinkActive
-                    : styles.mobileLinkInactive
-                )}
-              >
-                {link.label}
-              </Link>
-            ))}
+      <div
+        className={cn(
+          styles.mobileMenu,
+          isOpen ? styles.menuOpen : styles.menuClosed
+        )}
+      >
+        <div className={styles.mobileMenuContent}>
+          {links.map((link) => (
+            <Link
+              key={link.href}
+              to={link.href}
+              onClick={() => setIsOpen(false)}
+              className={cn(
+                styles.mobileLink,
+                location.pathname === link.href
+                  ? styles.mobileLinkActive
+                  : styles.mobileLinkInactive
+              )}
+            >
+              {link.label}
+            </Link>
+          ))}
 
-            <div className={styles.mobileCta}>
-              <Link to="/contact" onClick={() => setIsOpen(false)}>
-                <Button className={styles.fullWidthBtn}>Contact Us</Button>
-              </Link>
-            </div>
+          <div className={styles.mobileCta}>
+            <Link to="/contact" onClick={() => setIsOpen(false)}>
+              <Button className={styles.fullWidthBtn}>Contact Us</Button>
+            </Link>
           </div>
         </div>
-      )}
+      </div>
     </nav>
   );
 }
