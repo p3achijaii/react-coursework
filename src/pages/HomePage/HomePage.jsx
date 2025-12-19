@@ -57,6 +57,31 @@ function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* FEATURES SECTION */}
+      <section className={styles.featuresSection}>
+        <div className={styles.container}>
+          <div className={styles.featuresGrid}>
+            {[
+              {
+                icon: Star,
+                title: "Curated Selection",
+                desc: "We handpick every property to ensure it meets our high standards of quality and design.",
+              },
+              {
+                icon: Shield,
+                title: "",
+                desc: "",
+              },
+              {
+                icon: Clock,
+                title: "",
+                desc: "",
+              },
+            ]}
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
