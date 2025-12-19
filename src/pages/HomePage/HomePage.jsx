@@ -17,7 +17,7 @@ function HomePage() {
       <section className={styles.hero}>
         <div className={styles.heroBackground}>
           <img
-            src="public/hero_background.png"
+            src="/hero_background.png"
             alt="Modern home exterior"
             className={styles.heroImage}
           />
