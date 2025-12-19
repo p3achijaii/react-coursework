@@ -23,6 +23,7 @@ function Footer() {
               <div className={styles.logoIcon}>
                 <Home className={styles.icon} />
               </div>
+              <span className={styles.logoText}>Honeyhomes</span>
             </Link>
 
             <p className={styles.description}>
