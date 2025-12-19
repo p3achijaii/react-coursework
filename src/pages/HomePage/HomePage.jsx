@@ -7,6 +7,7 @@ import Button from "../../components/ui/Button";
 import propertiesData from "../../assets/properties.json";
 
 import styles from "./HomePage.module.css";
+import { cn } from "../../components/utils";
 
 function HomePage() {
   const featuredProperties = propertiesData.properties.slice(0, 3);
@@ -35,6 +36,24 @@ function HomePage() {
               Discover a curated collection of homes that blend comfort, style,
               and nature. Your dream sanctuary awaits.
             </p>
+
+            <div className={styles.heroButtons}>
+              <Link to="/find-property">
+                <Button size="lg" className={styles.heroBtn}>
+                  Browse Properties
+                </Button>
+              </Link>
+
+              <Link to="/contact">
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className={cn(styles.heroBtn, styles.outlineBtn)}
+                >
+                  Contact an Agent
+                </Button>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
