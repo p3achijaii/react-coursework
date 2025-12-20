@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import {
+  HouseHeart,
   Facebook,
   Twitter,
   Instagram,
@@ -20,7 +21,7 @@ function Footer() {
           <div className={styles.brandCol}>
             <Link to="/" className={styles.logo}>
               <div className={styles.logoIcon}>
-                <span stlye={{ fontSize: "1.5rem" }}>🍯</span>
+                <HouseHeart className={styles.icon} />
               </div>
               <span className={styles.logoText}>Honeyhomes</span>
             </Link>
