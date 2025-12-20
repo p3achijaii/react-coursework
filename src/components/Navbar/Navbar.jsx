@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Home } from "lucide-react";
+import { Menu, X, HouseHeart } from "lucide-react";
 import Button from "../ui/Button";
 import { cn } from "../utils";
 import styles from "./Navbar.module.css";
@@ -23,7 +23,7 @@ function Navbar() {
           {/* LOGO */}
           <Link to="/" className={styles.logo}>
             <div className={styles.logoIcon}>
-              <span stlye={{ fontSize: "1.5rem" }}>🍯</span>
+              <HouseHeart className={styles.icon} />
             </div>
             <span className={styles.logoText}>HoneyHomes</span>
           </Link>
