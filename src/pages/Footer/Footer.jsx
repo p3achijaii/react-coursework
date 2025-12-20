@@ -38,6 +38,38 @@ function Footer() {
               <Linkedin className={styles.socialIcon} size={20} />
             </div>
           </div>
+
+          {/* QUICK LINKS */}
+          <div>
+            <h3 className={styles.columnTitle}>Quick Links</h3>
+            <ul className={styles.linkList}>
+              <li>
+                <Link to="/" className={styles.link}>
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link to="/find-property" className={styles.link}>
+                  Find Property
+                </Link>
+              </li>
+              <li>
+                <Link to="/market-property" className={styles.link}>
+                  Market Your Property
+                </Link>
+              </li>
+              <li>
+                <Link to="/why-honeyhomes" className={styles.link}>
+                  Why HoneyHomes
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" className={styles.link}>
+                  Contact Us
+                </Link>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </footer>
