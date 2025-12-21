@@ -14,6 +14,10 @@ function Contact() {
           {/* INFO SECTION */}
           <div className={styles.infoSection}>
             <h1 className={styles.title}>Get in Touch</h1>
+            <p className={styles.text}>
+              Have questions about buying, selling, or renting? Our team is here
+              to help you every step of the way.
+            </p>
           </div>
         </div>
       </div>
