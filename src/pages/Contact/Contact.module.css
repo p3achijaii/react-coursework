@@ -1,0 +1,77 @@
+.page {
+  min-height: 100vh;
+  padding: 4rem 0;
+}
+
+.container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+}
+
+.grid {
+  display: grid;
+  gap: 4rem;
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.infoSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--color-stone-800);
+  margin-bottom: 1.5rem;
+}
+
+.text {
+  font-size: 1.25rem;
+  color: var(--color-stone-600);
+  margin-bottom: 3rem;
+  line-height: 1.6;
+}
+
+.contactDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contactItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.iconWrapper {
+  background-color: var(--color-terracotta-100);
+  padding: 1rem;
+  border-radius: var(--radius-xl);
+  color: var(--color-terracotta-600);
+}
+
+.detailTitle {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--color-stone-800);
+  margin-bottom: 0.25rem;
+}
+
+.detailText {
+  color: var(--color-stone-600);
+}
