@@ -18,9 +18,39 @@ function Contact() {
               Have questions about buying, selling, or renting? Our team is here
               to help you every step of the way.
             </p>
+
+            <div className={styles.contactDetails}>
+              <div className={styles.contactItem}>
+                <div className={styles.iconWrapper}>
+                  <MapPin size={24} />
+                </div>
+              </div>
+              <h3 className={styles.detailTitle}>Visit Us</h3>
+              <p className={styles.detailText}>
+                123 Oxford Street
+                <br />
+                London, W1D 1LT
+              </p>
+            </div>
           </div>
+
+          <div className={styles.contactItem}>
+            <div className={styles.iconWrapper}>
+              <Phone size={24} />
+            </div>
+          </div>
+          <h3 className={styles.detailTitle}>Call Us</h3>
+          <p className={styles.detailText}>123 4567 8910</p>
         </div>
       </div>
+
+      <div className={styles.contactItem}>
+        <div className={styles.iconWrapper}>
+          <Mail size={24} />
+        </div>
+      </div>
+      <h3 className={styles.detailTitle}>Email Us</h3>
+      <p className={styles.detailText}>honeyhomes@gmail.com</p>
     </div>
   );
 }
