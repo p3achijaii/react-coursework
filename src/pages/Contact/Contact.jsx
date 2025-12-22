@@ -53,6 +53,15 @@ function Contact() {
                   <p className={styles.detailText}>hello@honeyhomes.com</p>
                 </div>
               </div>
+
+              {/* FORM SECTION */}
+              <div className={styles.formCard}>
+                <h2 className={styles.formTitle}>Send us a message</h2>
+
+                <form className={styles.form}>
+                  <Input label="Full Name" placeholder="Enter your Name" />
+                </form>
+              </div>
             </div>
           </div>
         </div>
