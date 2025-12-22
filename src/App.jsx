@@ -4,12 +4,14 @@ import Navbar from "./components/Navbar/Navbar.jsx";
 import HomePage from "./pages/HomePage/HomePage.jsx";
 import Contact from "./pages/Contact/Contact.jsx";
 import Footer from "./pages/Footer/Footer.jsx";
+import ScrollToTop from "./components/ui/ScrollToTop.jsx";
 
 import "./App.css";
 
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Navbar />
 
       <Routes>
