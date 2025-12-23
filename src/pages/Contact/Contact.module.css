@@ -75,3 +75,23 @@
 .detailText {
   color: var(--color-stone-600);
 }
+
+.formCard {
+  background-color: var(--color-white);
+  padding: 2rem;
+  border-radius: var(--radius-3xl);
+  box-shadow: var(--shadow-soft);
+}
+
+@media (min-width: 768px) {
+  .formCard {
+    padding: 3rem;
+  }
+}
+
+.formTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-stone-800);
+  margin-bottom: 2rem;
+}
