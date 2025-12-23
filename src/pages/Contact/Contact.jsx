@@ -53,36 +53,36 @@ function Contact() {
                   <p className={styles.detailText}>hello@honeyhomes.com</p>
                 </div>
               </div>
-
-              {/* FORM SECTION */}
-              <div className={styles.formCard}>
-                <h2 className={styles.formTitle}>Send us a message</h2>
-
-                <form className={styles.form}>
-                  <Input label="Full Name" placeholder="Your Name" />
-
-                  <Input
-                    label="Email Address"
-                    type="email"
-                    placeholder="Your Email"
-                  />
-
-                  <Input label="Subject" placeholder="Inquiry about..." />
-
-                  <div className={styles.textareaContainer}>
-                    <label className={styles.label}>Message</label>
-                    <textarea
-                      className={styles.textarea}
-                      placeholder="How can we help you?"
-                    />
-                  </div>
-
-                  <Button size="lg" className={styles.submitBtn}>
-                    Send Message
-                  </Button>
-                </form>
-              </div>
             </div>
+          </div>
+
+          {/* FORM SECTION */}
+          <div className={styles.formCard}>
+            <h2 className={styles.formTitle}>Send us a message</h2>
+
+            <form className={styles.form}>
+              <Input label="Full Name" placeholder="Your Name" />
+
+              <Input
+                label="Email Address"
+                type="email"
+                placeholder="Your Email"
+              />
+
+              <Input label="Subject" placeholder="Inquiry about..." />
+
+              <div className={styles.textareaContainer}>
+                <label className={styles.label}>Message</label>
+                <textarea
+                  className={styles.textarea}
+                  placeholder="How can we help you?"
+                />
+              </div>
+
+              <Button size="lg" className={styles.submitBtn}>
+                Send Message
+              </Button>
+            </form>
           </div>
         </div>
       </div>
