@@ -66,17 +66,17 @@ function MarketProperty() {
             <div className={styles.row}>
               <Input label="Full Name" placeholder="John Doe" />
               <Input label="Phone Number" placeholder="123 4567 8910" />
-
-              <Input
-                label="Email Address"
-                type="email"
-                placeholder="john@example.com"
-              />
-
-              <Button size="lg" className={styles.submitBtn}>
-                Submit Listing Request
-              </Button>
             </div>
+
+            <Input
+              label="Email Address"
+              type="email"
+              placeholder="john@example.com"
+            />
+
+            <Button size="lg" className={styles.submitBtn}>
+              Submit Listing Request
+            </Button>
           </form>
         </div>
       </div>
