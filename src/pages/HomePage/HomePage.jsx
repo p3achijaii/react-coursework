@@ -4,6 +4,7 @@ import { Star, Shield, Clock, ArrowRight } from "lucide-react";
 
 import Button from "../../components/ui/Button";
 
+import heroImage from "../../assets/hero_background.png";
 import styles from "./HomePage.module.css";
 import { cn } from "../../components/utils";
 
@@ -32,7 +33,7 @@ function HomePage() {
       <section className={styles.hero}>
         <div className={styles.heroBackground}>
           <img
-            src="/hero_background.png"
+            src={heroImage}
             alt="Modern home exterior"
             className={styles.heroImage}
           />
