@@ -1,16 +1,30 @@
-import React from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { ArrowRight, Star, Shield, Clock } from "lucide-react";
+import { Star, Shield, Clock, ArrowRight } from "lucide-react";
 
 import Button from "../../components/ui/Button";
-
-import propertiesData from "../../assets/properties.json";
 
 import styles from "./HomePage.module.css";
 import { cn } from "../../components/utils";
 
 function HomePage() {
-  const featuredProperties = propertiesData.properties.slice(0, 3);
+  const [featuredProperties, setFeaturedProperties] = useState([]);
+
+  useEffect(() => {
+    fetch("/properties.json")
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error("Failed to fetch properties");
+        }
+        return res.json();
+      })
+      .then((data) => {
+        setFeaturedProperties(data.properties.slice(0, 3));
+      })
+      .catch((err) => {
+        console.error("Failed to load properties:", err);
+      });
+  }, []);
 
   return (
     <div className="min-h-screen">
