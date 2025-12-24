@@ -8,13 +8,13 @@ const Select = forwardRef(({ className, label, options, ...props }, ref) => {
     <div className={styles.container}>
       {label && <label className={styles.label}>{label}</label>}
 
-      <div className={StyleSheet.selectWrapper}>
+      <div className={styles.selectWrapper}>
         <select ref={ref} className={cn(styles.select, className)} {...props}>
-          {options.map((option) => {
-            <option key={option.value} value={options.value}>
+          {options.map((option) => (
+            <option key={option.value} value={option.value}>
               {option.label}
-            </option>;
-          })}
+            </option>
+          ))}
         </select>
         <ChevronDown className={styles.icon} />
       </div>
