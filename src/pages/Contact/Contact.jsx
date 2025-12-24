@@ -40,7 +40,7 @@ function Contact() {
                 </div>
                 <div>
                   <h3 className={styles.detailTitle}>Call Us</h3>
-                  <p className={styles.detailText}>020 7123 4567</p>
+                  <p className={styles.detailText}>123 4567 8910</p>
                 </div>
               </div>
 
@@ -50,7 +50,7 @@ function Contact() {
                 </div>
                 <div>
                   <h3 className={styles.detailTitle}>Email Us</h3>
-                  <p className={styles.detailText}>hello@honeyhomes.com</p>
+                  <p className={styles.detailText}>honeyhomes@gmail.com</p>
                 </div>
               </div>
             </div>
