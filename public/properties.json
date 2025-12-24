@@ -13,7 +13,7 @@
       "added": {
         "month": "October",
         "day": 12,
-        "year": 2022
+        "year": 2024
       }
     },
     {
@@ -29,7 +29,7 @@
       "added": {
         "month": "September",
         "day": 14,
-        "year": 2022
+        "year": 2021
       }
     },
     {
@@ -45,7 +45,7 @@
       "added": {
         "month": "August",
         "day": 5,
-        "year": 2022
+        "year": 2025
       }
     },
     {
@@ -61,7 +61,7 @@
       "added": {
         "month": "July",
         "day": 3,
-        "year": 2022
+        "year": 2024
       }
     },
     {
@@ -93,16 +93,16 @@
       "added": {
         "month": "May",
         "day": 15,
-        "year": 2022
+        "year": 2023
       }
     },
     {
       "id": "prop7",
-      "type": "Detached House",
+      "type": "Apartment",
       "bedrooms": 5,
       "price": 1250000,
       "tenure": "Freehold",
-      "description": "An impressive five bedroom detached family home set within a prestigious residential area. The property boasts spacious living accommodation, a large landscaped garden, double garage, and high-specification kitchen. Ideally suited for families seeking luxury living with excellent school catchments nearby.",
+      "description": "A luxurious five-bedroom apartment located in a prestigious residential building. The property features spacious open-plan living areas, modern kitchen with high-end appliances, private balconies, and secure parking. Perfect for families seeking upscale urban living with easy access to local amenities and transport links.",
       "location": "Oakwood Drive, Wilmslow SK9",
       "picture": "images/prop7pic1small.jpg",
       "url": "properties/prop7.html",
