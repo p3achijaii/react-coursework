@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import Button from "../../components/ui/Button";
+import section1 from "../../assets/section1.png";
 import styles from "./WhyHoneyhomes.module.css";
 
 function WhyHoneyhomes() {
@@ -19,6 +20,33 @@ function WhyHoneyhomes() {
       </section>
 
       {/* SECTION 1 */}
+      <section className={styles.section}>
+        <div className={styles.container}>
+          <div className={styles.grid}>
+            <div className={styles.imageContainer}>
+              <img
+                src={section1}
+                alt="Happy family in new home"
+                className={styles.image}
+              />
+            </div>
+
+            <div>
+              <h2 className={styles.contentTitle}>Expertise You Can Trust</h2>
+              <p className={styles.contentText}>
+                With over 20 years of experience in the London property market,
+                our team brings unparalleled knowledge and insight to every
+                transaction. We understand the nuances of each neighborhood,
+                ensuring you find a home that perfectly matches your lifestyle.
+              </p>
+
+              <Link to="/contact">
+                <Button>Speak to an Expert</Button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
