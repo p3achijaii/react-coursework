@@ -44,7 +44,7 @@ function HomePage() {
           <div className={styles.heroTextContainer}>
             <h1 className={styles.heroTitle}>
               Find your place <br />
-              <span className={styles.hightlight}>to call home.</span>
+              <span className={styles.highlight}>to call home.</span>
             </h1>
 
             <p className={styles.heroDescription}>
