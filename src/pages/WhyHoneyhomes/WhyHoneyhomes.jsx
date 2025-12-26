@@ -47,6 +47,28 @@ function WhyHoneyhomes() {
           </div>
         </div>
       </section>
+
+      {/* STATS */}
+      <section className={styles.statsSection}>
+        <div className={styles.container}>
+          <div className={styles.statsGrid}>
+            <div>
+              <div className={styles.statsValue}>2,500+</div>
+              <div className={styles.statLabel}>Homes Sold</div>
+            </div>
+
+            <div>
+              <div className={styles.statsValue}>98%</div>
+              <div className={styles.statLabel}>Client Satisfation</div>
+            </div>
+
+            <div>
+              <div className={styles.statsValue}>20+</div>
+              <div className={styles.statLabel}>Years Experience</div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
