@@ -12,20 +12,13 @@
 .container {
   max-width: 80rem;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 0 1rem;
 }
 
 @media (min-width: 640px) {
   .container {
     padding: 0 1.5rem;
   }
-}
-
-.heroTitle {
-  font-size: 3rem;
-  font-weight: 700;
-  color: var(--color-white);
-  margin-bottom: 1.5rem;
 }
 
 .heroTitle {
@@ -82,4 +75,35 @@
   color: var(--color-stone-600);
   line-height: 1.8;
   margin-bottom: 2rem;
+}
+
+.statsSection {
+  background-color: var(--color-white);
+  padding: 6rem 0;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .statsGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.statValue {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--color-terracotta-500);
+  margin-bottom: 0.5rem;
+}
+
+.statLabel {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-stone-800);
 }
