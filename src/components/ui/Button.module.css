@@ -23,7 +23,7 @@
     0 0 0 4px var(--color-white);
 }
 
-.button:disable {
+.button:disabled {
   opacity: 0.5;
   pointer-events: none;
 }
