@@ -42,7 +42,7 @@ function WhyHoneyhomes() {
               </p>
 
               <Link to="/contact">
-                <Button>Speak to an Expert</Button>
+                <Button variant="secondary">Speak to an Expert</Button>
               </Link>
             </div>
           </div>
