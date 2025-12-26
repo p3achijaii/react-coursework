@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 import Button from "../../components/ui/Button";
 import section1 from "../../assets/section1.png";
+import section2 from "../../assets/section2.png";
 import styles from "./WhyHoneyhomes.module.css";
 
 function WhyHoneyhomes() {
@@ -84,9 +85,17 @@ function WhyHoneyhomes() {
                 of the way.
               </p>
 
-              <Link to='/find-property'>
+              <Link to="/find-property">
                 <Button variant="secondary">Start Your Journey</Button>
               </Link>
+            </div>
+
+            <div className={styles.imageContainer}>
+              <img
+                src={section2}
+                alt="Real estate agent meeting"
+                className={styles.image}
+              />
             </div>
           </div>
         </div>
