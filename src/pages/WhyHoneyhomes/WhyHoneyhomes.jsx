@@ -53,17 +53,17 @@ function WhyHoneyhomes() {
         <div className={styles.container}>
           <div className={styles.statsGrid}>
             <div>
-              <div className={styles.statsValue}>2,500+</div>
+              <div className={styles.statValue}>2,500+</div>
               <div className={styles.statLabel}>Homes Sold</div>
             </div>
 
             <div>
-              <div className={styles.statsValue}>98%</div>
-              <div className={styles.statLabel}>Client Satisfation</div>
+              <div className={styles.statValue}>98%</div>
+              <div className={styles.statLabel}>Client Satisfaction</div>
             </div>
 
             <div>
-              <div className={styles.statsValue}>20+</div>
+              <div className={styles.statValue}>20+</div>
               <div className={styles.statLabel}>Years Experience</div>
             </div>
           </div>
