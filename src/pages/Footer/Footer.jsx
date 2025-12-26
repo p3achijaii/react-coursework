@@ -112,6 +112,29 @@ function Footer() {
               </li>
             </ul>
           </div>
+
+          {/* CONTACT US */}
+          <div>
+            <h3 className={styles.columnTitle}>Contact Us</h3>
+            <ul className={styles.linkList}>
+              <li className={styles.contactItem}>
+                <MapPin className={styles.contactIcon} />
+                <span>
+                  123 Oxford Street
+                  <br />
+                  London, W1D 1LT
+                </span>
+              </li>
+              <li className={styles.contactItem}>
+                <Phone className={styles.contactIcon} />
+                <span>123 4567 8910</span>
+              </li>
+              <li className={styles.contactItem}>
+                <Mail className={styles.contactIcon} />
+                <span>honeyhomes@gmail.com</span>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </footer>
