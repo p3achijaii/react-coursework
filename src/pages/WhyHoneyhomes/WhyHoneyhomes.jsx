@@ -69,6 +69,28 @@ function WhyHoneyhomes() {
           </div>
         </div>
       </section>
+
+      {/* SECTION 2 */}
+      <section className={styles.section}>
+        <div className={styles.container}>
+          <div className={styles.grid}>
+            <div>
+              <h2 className={styles.contentTitle}>A Personal Approach</h2>
+              <p className={styles.contentText}>
+                We belive that real estate is a people business first. That's
+                why we take the time to understand your unique needs,
+                preferences, and goals. Whether you're buying your first
+                apartment or selling a family estate, we're with you every step
+                of the way.
+              </p>
+
+              <Link to='/find-property'>
+                <Button variant="secondary">Start Your Journey</Button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
