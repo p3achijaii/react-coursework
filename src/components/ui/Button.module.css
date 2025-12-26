@@ -40,13 +40,13 @@
 }
 
 .secondary {
-  background-color: var(--color-sage-500);
+  background-color: var(--color-secondary-500);
   color: var(--color-white);
   box-shadow: var(--shadow-soft);
 }
 
 .secondary:hover {
-  background-color: var(--color-sage-600);
+  background-color: var(--color-secondary-600);
 }
 
 .outline {
