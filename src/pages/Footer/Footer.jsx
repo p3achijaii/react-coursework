@@ -136,6 +136,25 @@ function Footer() {
             </ul>
           </div>
         </div>
+
+        {/* COPYRIGHT BAR */}
+        <div className={styles.bottomBar}>
+          <p className={styles.copyright}>
+            © {new Date().getFullYear()} HoneyHomes. All rights reserved.
+          </p>
+
+          <div className={styles.legalLinks}>
+            <Link to="#" className={styles.legalLink}>
+              Privacy Policy
+            </Link>
+            <Link to="#" className={styles.legalLink}>
+              Terms of Service
+            </Link>
+            <Link to="#" className={styles.legalLink}>
+              Cookie Policy
+            </Link>
+          </div>
+        </div>
       </div>
     </footer>
   );
