@@ -79,23 +79,33 @@ function Footer() {
                 <Link to="/find-property" className={styles.link}>
                   Bromley Petts Wood
                 </Link>
+              </li>
 
+              <li>
                 <Link to="/find-property" className={styles.link}>
                   Canterbury Orpington
                 </Link>
+              </li>
 
+              <li>
                 <Link to="/find-property" className={styles.link}>
                   Leeds
                 </Link>
+              </li>
 
+              <li>
                 <Link to="/find-property" className={styles.link}>
                   Orpington
                 </Link>
+              </li>
 
+              <li>
                 <Link to="/find-property" className={styles.link}>
                   Petts Wood
                 </Link>
+              </li>
 
+              <li>
                 <Link to="/find-property" className={styles.link}>
                   Wilmslow
                 </Link>
