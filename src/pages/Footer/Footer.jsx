@@ -70,6 +70,38 @@ function Footer() {
               </li>
             </ul>
           </div>
+
+          {/* POPULAR AREAS */}
+          <div>
+            <h3 className={styles.columnTitle}>Popular Areas</h3>
+            <ul className={styles.linkList}>
+              <li>
+                <Link to="/find-property" className={styles.link}>
+                  Bromley Petts Wood
+                </Link>
+
+                <Link to="/find-property" className={styles.link}>
+                  Canterbury Orpington
+                </Link>
+
+                <Link to="/find-property" className={styles.link}>
+                  Leeds
+                </Link>
+
+                <Link to="/find-property" className={styles.link}>
+                  Orpington
+                </Link>
+
+                <Link to="/find-property" className={styles.link}>
+                  Petts Wood
+                </Link>
+
+                <Link to="/find-property" className={styles.link}>
+                  Wilmslow
+                </Link>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </footer>
