@@ -10,6 +10,7 @@ import { cn } from "../../components/utils";
 
 function HomePage() {
   const [featuredProperties, setFeaturedProperties] = useState([]);
+  const featuresRef = useRef(null);
 
   useEffect(() => {
     fetch("/properties.json")
