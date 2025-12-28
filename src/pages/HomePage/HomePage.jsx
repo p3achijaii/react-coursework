@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { Star, Shield, Clock, ArrowRight } from "lucide-react";
 
@@ -26,6 +26,24 @@ function HomePage() {
       .catch((err) => {
         console.error("Failed to load properties:", err);
       });
+  }, []);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add(styles.inView);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.3 }
+    );
+
+    if (featuresRef.current) {
+      observer.observe(featuresRef.current);
+    }
+
+    return () => observer.disconnect();
   }, []);
 
   return (
@@ -75,7 +93,7 @@ function HomePage() {
       </section>
 
       {/* FEATURES SECTION */}
-      <section className={styles.featuresSection}>
+      <section ref={featuresRef} className={styles.featuresSection}>
         <div className={styles.container}>
           <div className={styles.featuresGrid}>
             {[
