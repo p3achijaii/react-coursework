@@ -44,6 +44,46 @@ function PropertyCard({
           />
 
           {/* PROPERTY TYPE BADGE */}
+          <span className={styles.typeBadge}>{property.type}</span>
+
+          {/* HEART */}
+          <button
+            className={styles.favouriteBtn}
+            onClick={handleFavouriteClick}
+            aria-label="Toggle favourite"
+          >
+            <Heart
+              size={18}
+              className={cn(
+                styles.heartIcon,
+                isFavourite && styles.heartActive
+              )}
+            />
+          </button>
+        </div>
+
+        {/* CONTENT */}
+        <div className={styles.connect}>
+          <div className={styles.topRow}>
+            <div className={styles.address}>
+              <MapPin className={styles.mapIcon} />
+              {property.location}
+            </div>
+
+            <div className={styles.price}>{formatPrice(property.price)}</div>
+          </div>
+
+          <div className={styles.bottomRow}>
+            <div className={styles.feature}>
+              <Bed className={styles.featureIcon} />
+              <span>{property.bedroom} Beds</span>
+            </div>
+
+            <div className={styles.feature}>
+              <FileText className={styles.featureIcon} />
+              <span>{property.tenure}</span>
+            </div>
+          </div>
         </div>
       </Link>
     </div>
