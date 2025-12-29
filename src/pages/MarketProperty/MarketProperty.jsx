@@ -33,10 +33,10 @@ function MarketProperty() {
               <Select
                 label="Property Type"
                 options={[
-                  { value: "apartment", label: "Apartment" },
                   { value: "cottage", label: "Cottage" },
                   { value: "flat", label: "Flat" },
                   { value: "house", label: "House" },
+                  { value: "villa", label: "Villa" },
                 ]}
               />
               <Input
