@@ -179,7 +179,7 @@
 }
 
 .featureIconWrapper {
-  background-color: var(--color-sage-100);
+  background-color: var(--color-secondary-500);
   width: 3.5rem;
   height: 3.5rem;
   border-radius: var(--radius-2xl);
@@ -192,7 +192,7 @@
 .featureIcon {
   height: 1.75rem;
   width: 1.75rem;
-  color: var(--color-sage-600);
+  color: var(--color-secondary-600);
 }
 
 .featureTitle {
