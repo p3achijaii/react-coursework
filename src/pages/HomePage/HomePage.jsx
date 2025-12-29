@@ -3,10 +3,11 @@ import { Link } from "react-router-dom";
 import { Star, Shield, Clock, ArrowRight } from "lucide-react";
 
 import Button from "../../components/ui/Button";
+import { cn } from "../../components/utils";
 
 import heroImage from "../../assets/hero_background.png";
+import PropertyCard from "../../components/PropertyCard";
 import styles from "./HomePage.module.css";
-import { cn } from "../../components/utils";
 
 function HomePage() {
   const [featuredProperties, setFeaturedProperties] = useState([]);
@@ -143,14 +144,14 @@ function HomePage() {
           </div>
 
           <div className={styles.propertiesGrid}>
-            {featuredProperties((property) => (
+            {featuredProperties.map((property) => (
               <PropertyCard key={property.id} property={property} />
             ))}
           </div>
 
           <div className={styles.mobileCta}>
             <Link to="/find-property">
-              <Button variant="secondary" classname="w-full">
+              <Button variant="secondary" Classname="w-full">
                 View All Properties
               </Button>
             </Link>
