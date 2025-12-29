@@ -33,6 +33,18 @@ function PropertyCard({
     >
       <Link to={`/property/${property.id}`} className={styles.card}>
         {/* IMAGE */}
+        <div className={styles.imageContainer}>
+          <img
+            src={`/${property.picture}`}
+            alt={`${property.type} in ${property.location}`}
+            className={styles.image}
+            onError={(e) => {
+              e.target.style.display = "none";
+            }}
+          />
+
+          {/* PROPERTY TYPE BADGE */}
+        </div>
       </Link>
     </div>
   );
