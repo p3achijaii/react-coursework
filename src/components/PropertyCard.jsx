@@ -24,6 +24,18 @@ function PropertyCard({
     e.stopPropagation();
     onToggleFavourirte?.(property);
   };
+
+  return (
+    <div
+      className={styles.cardWrapper}
+      draggable={draggable}
+      onDragStart={handleDragStart}
+    >
+      <Link to={`/property/${property.id}`} className={styles.card}>
+        {/* IMAGE */}
+      </Link>
+    </div>
+  );
 }
 
 export default PropertyCard;
