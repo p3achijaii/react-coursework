@@ -76,7 +76,7 @@ function PropertyCard({
           <div className={styles.bottomRow}>
             <div className={styles.feature}>
               <Bed className={styles.featureIcon} />
-              <span>{property.bedroom} Beds</span>
+              <span>{property.bedrooms} Beds</span>
             </div>
 
             <div className={styles.feature}>
