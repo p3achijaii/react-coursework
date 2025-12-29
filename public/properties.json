@@ -66,22 +66,6 @@
     },
     {
       "id": "prop5",
-      "type": "Apartment",
-      "bedrooms": 1,
-      "price": 285000,
-      "tenure": "Leasehold",
-      "description": "Modern one bedroom apartment located in a contemporary development close to transport links. The property offers an open-plan kitchen and living space, a private balcony, and secure entry system. Perfect for professionals or investors seeking low-maintenance city living.",
-      "location": "Dock Street, Leeds LS10",
-      "picture": "images/prop5pic1small.png",
-      "url": "properties/prop5.html",
-      "added": {
-        "month": "July",
-        "day": 19,
-        "year": 2022
-      }
-    },
-    {
-      "id": "prop5",
       "type": "Villa",
       "bedrooms": 4,
       "price": 685000,
@@ -94,6 +78,22 @@
         "month": "July",
         "day": 19,
         "year": 2022
+      }
+    },
+    {
+      "id": "prop6",
+      "type": "House",
+      "bedrooms": 5,
+      "price": 1250000,
+      "tenure": "Freehold",
+      "description": "An impressive five bedroom detached family residence set on a prestigious road within close proximity to Bromley South and highly regarded schools. The home offers extensive living space, including three reception rooms, a luxury open-plan kitchen/breakfast area, utility room and ground-floor cloakroom. The first floor comprises five well-proportioned bedrooms, two with en-suites, plus a spacious family bathroom. Features include a large rear garden, double garage and off-street parking for multiple cars.",
+      "location": "Ridgeway Drive, Bromley BR2",
+      "picture": "images/prop6pic1small.png",
+      "url": "properties/prop6.html",
+      "added": {
+        "month": "May",
+        "day": 15,
+        "year": 2023
       }
     },
     {
