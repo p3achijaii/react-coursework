@@ -83,10 +83,10 @@
     {
       "id": "prop6",
       "type": "House",
-      "bedrooms": 5,
-      "price": 1250000,
+      "bedrooms": 4,
+      "price": 1150000,
       "tenure": "Freehold",
-      "description": "An impressive five bedroom detached family residence set on a prestigious road within close proximity to Bromley South and highly regarded schools. The home offers extensive living space, including three reception rooms, a luxury open-plan kitchen/breakfast area, utility room and ground-floor cloakroom. The first floor comprises five well-proportioned bedrooms, two with en-suites, plus a spacious family bathroom. Features include a large rear garden, double garage and off-street parking for multiple cars.",
+      "description": "A spacious four-bedroom detached family house located on a prestigious road, within close proximity to Bromley South and highly regarded schools. The property features generous living areas, including a luxury open-plan kitchen and dining room, three reception rooms, utility room, and ground-floor cloakroom. The first floor comprises four well-proportioned bedrooms, two with en-suite bathrooms, plus a family bathroom. Additional highlights include a landscaped rear garden, double garage, and off-street parking for multiple vehicles, making it ideal for families seeking comfort, space, and style.",
       "location": "Ridgeway Drive, Bromley BR2",
       "picture": "images/prop6pic1small.png",
       "url": "properties/prop6.html",
