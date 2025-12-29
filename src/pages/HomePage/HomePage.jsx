@@ -124,6 +124,39 @@ function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* FEATURED PROPERTIES */}
+      <section className={styles.propertiesSection}>
+        <div className={styles.container}>
+          <div className={styles.sectionHeader}>
+            <div>
+              <h2 className={styles.sectionTitle}>Featured Homes</h2>
+              <p className={styles.sectionSubtitle}>
+                Explore our most exclusive listings, selected for their unique
+                character and exceptional value.
+              </p>
+            </div>
+
+            <Link to="/find-property" className={styles.viewAllLink}>
+              View all properties <ArrowRight className={styles.arrowIcon} />
+            </Link>
+          </div>
+
+          <div className={styles.propertiesGrid}>
+            {featuredProperties((property) => (
+              <PropertyCard key={property.id} property={property} />
+            ))}
+          </div>
+
+          <div className={styles.mobileCta}>
+            <Link to="/find-property">
+              <Button variant="secondary" classname="w-full">
+                View All Properties
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
