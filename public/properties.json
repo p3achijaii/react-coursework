@@ -98,11 +98,11 @@
     },
     {
       "id": "prop7",
-      "type": "Apartment",
+      "type": "Villa",
       "bedrooms": 5,
       "price": 1250000,
       "tenure": "Freehold",
-      "description": "A luxurious five-bedroom apartment located in a prestigious residential building. The property features spacious open-plan living areas, modern kitchen with high-end appliances, private balconies, and secure parking. Perfect for families seeking upscale urban living with easy access to local amenities and transport links.",
+      "description": "A luxurious five-bedroom villa set in an exclusive residential area. The property boasts spacious open-plan living areas, a modern kitchen with high-end appliances, multiple private balconies, a landscaped garden, and secure parking. Ideal for families seeking upscale, private living with convenient access to local amenities and transport links.",
       "location": "Oakwood Drive, Wilmslow SK9",
       "picture": "images/prop7pic1small.png",
       "url": "properties/prop7.html",
