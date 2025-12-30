@@ -3,6 +3,8 @@
   border-radius: var(--radius-3xl);
   overflow: hidden;
   box-shadow: var(--shadow-soft);
+  text-decoration: none;
+  color: inherit;
   transition: all 0.3s ease;
   height: 100%;
   display: flex;
@@ -126,6 +128,9 @@
   font-weight: 700;
   color: var(--color-terracotta-500);
   white-space: nowrap;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
 }
 
 .features {
