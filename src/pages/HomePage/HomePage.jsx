@@ -151,11 +151,32 @@ function HomePage() {
 
           <div className={styles.mobileCta}>
             <Link to="/find-property">
-              <Button variant="secondary" Classname="w-full">
+              <Button variant="secondary" className="w-full">
                 View All Properties
               </Button>
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* CTA SECTION */}
+      <section className={styles.ctaSection}>
+        <div className={styles.ctaBlob1} />
+        <div Classname={styles.ctaBlob2} />
+
+        <div className={styles.ctaContent}>
+          <h2 className={styles.ctaTitle}>Ready to find your dream home?</h2>
+
+          <p className={styles.ctaText}>
+            Join thousands of happy homeowners who found their perfect match
+            with HoneyHomes.
+          </p>
+
+          <Link to="/find-property">
+            <Button size="lg" className={styles.ctaBtn}>
+              Start Your Search
+            </Button>
+          </Link>
         </div>
       </section>
     </div>
