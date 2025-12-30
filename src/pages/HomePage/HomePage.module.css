@@ -352,6 +352,33 @@
   opacity: 0.5;
 }
 
+.ctaBlob3 {
+  position: absolute;
+  top: -1;
+  right: -1;
+  margin-right: 5rem;
+  margin-top: 5rem;
+  width: 24rem;
+  height: 24rem;
+  background-color: #536ea3;
+  border-radius: 50%;
+  filter: blur(64px);
+  opacity: 0.5;
+}
+
+.ctaBlob4 {
+  position: absolute;
+  bottom: -1;
+  left: -1;
+  margin-left: 5rem;
+  margin-bottom: 5rem;
+  width: 24rem;
+  height: 24rem;
+  background-color: #1a4caf;
+  border-radius: 50%;
+  filter: blur(64px);
+  opacity: 0.5;
+}
 .ctaContent {
   position: relative;
   z-index: 10;
