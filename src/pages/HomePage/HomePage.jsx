@@ -151,7 +151,7 @@ function HomePage() {
 
           <div className={styles.mobileCta}>
             <Link to="/find-property">
-              <Button variant="secondary" className="w-full">
+              <Button size="lg" className={styles.ctaMobileBtn}>
                 View All Properties
               </Button>
             </Link>
