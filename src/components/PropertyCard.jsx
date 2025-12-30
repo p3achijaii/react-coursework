@@ -26,11 +26,7 @@ function PropertyCard({
   };
 
   return (
-    <div
-      className={styles.cardWrapper}
-      draggable={draggable}
-      onDragStart={handleDragStart}
-    >
+    <div draggable={draggable} onDragStart={handleDragStart}>
       <Link to={`/property/${property.id}`} className={styles.card}>
         {/* IMAGE */}
         <div className={styles.imageContainer}>
@@ -38,17 +34,15 @@ function PropertyCard({
             src={`/${property.picture}`}
             alt={`${property.type} in ${property.location}`}
             className={styles.image}
-            onError={(e) => {
-              e.target.style.display = "none";
-            }}
           />
+          <div className={styles.overlay} />
 
-          {/* PROPERTY TYPE BADGE */}
-          <span className={styles.typeBadge}>{property.type}</span>
+          {/* PROPERTY TYPE */}
+          <span className={styles.tag}>{property.type}</span>
 
           {/* HEART */}
           <button
-            className={styles.favouriteBtn}
+            className={styles.favoriteBtn}
             onClick={handleFavouriteClick}
             aria-label="Toggle favourite"
           >
@@ -56,32 +50,34 @@ function PropertyCard({
               size={18}
               className={cn(
                 styles.heartIcon,
-                isFavourite && styles.heartActive
+                isFavourite && styles.heartIconActive
               )}
             />
           </button>
         </div>
 
         {/* CONTENT */}
-        <div className={styles.connect}>
-          <div className={styles.topRow}>
+        <div className={styles.content}>
+          <div className={styles.header}>
             <div className={styles.address}>
               <MapPin className={styles.mapIcon} />
               {property.location}
             </div>
-
             <div className={styles.price}>{formatPrice(property.price)}</div>
           </div>
 
-          <div className={styles.bottomRow}>
+          {/* BOTTOM ROW */}
+          <div className={styles.features}>
             <div className={styles.feature}>
               <Bed className={styles.featureIcon} />
-              <span>{property.bedrooms} Beds</span>
+              <span className={styles.featureText}>
+                {property.bedrooms} Beds
+              </span>
             </div>
 
             <div className={styles.feature}>
               <FileText className={styles.featureIcon} />
-              <span>{property.tenure}</span>
+              <span className={styles.featureText}>{property.tenure}</span>
             </div>
           </div>
         </div>
