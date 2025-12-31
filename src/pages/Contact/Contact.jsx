@@ -40,7 +40,7 @@ function Contact() {
                 </div>
                 <div>
                   <h3 className={styles.detailTitle}>Call Us</h3>
-                  <p className={styles.detailText}>123 4567 8910</p>
+                  <p className={styles.detailText}>+44 20 1234 5678</p>
                 </div>
               </div>
 
