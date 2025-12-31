@@ -127,7 +127,7 @@ function Footer() {
               </li>
               <li className={styles.contactItem}>
                 <Phone className={styles.contactIcon} />
-                <span>123 4567 8910</span>
+                <span>+44 20 1234 5678</span>
               </li>
               <li className={styles.contactItem}>
                 <Mail className={styles.contactIcon} />
