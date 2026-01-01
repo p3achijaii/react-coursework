@@ -44,6 +44,31 @@ function FavoritesSidebar() {
       clearFavorites();
     }
   };
+
+  return (
+    <div className={cn(styles.sidebar, isOpen && styles.sidebarOpen)}>
+      {/* TOGGLE */}
+      <button onClick={() => setIsOpen(!isOpen)} className={styles.toggleBtn}>
+        {isOpen ? <X size={24} /> : <Heart size={24} />}
+      </button>
+
+      {/* HEADER */}
+      <div className={styles.header}>
+        <h3 className={styles.title}>Favourites</h3>
+        <span className={styles.count}>{favorites.length}</span>
+
+        {favorites.length > 0 && (
+          <button
+            onClick={handleClearAll}
+            className={styles.clearBtn}
+            title="Remove All"
+          >
+            <Trash2 size={16} />
+          </button>
+        )}
+      </div>
+    </div>
+  );
 }
 
 export default FavoritesSidebar;
