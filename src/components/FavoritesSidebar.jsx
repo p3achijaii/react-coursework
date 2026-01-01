@@ -38,7 +38,7 @@ function FavoritesSidebar() {
 
   const handleClearAll = () => {
     const confirmed = window.confirm(
-      "Are you sure you want to remove all favorites?"
+      "Are you sure you want to remove all favourites?"
     );
     if (confirmed) {
       clearFavorites();
@@ -54,7 +54,7 @@ function FavoritesSidebar() {
 
       {/* Header */}
       <div className={styles.header}>
-        <h3 className={styles.title}>Favorites</h3>
+        <h3 className={styles.title}>Favourites</h3>
         <span className={styles.count}>{favorites.length}</span>
 
         {favorites.length > 0 && (
@@ -78,7 +78,7 @@ function FavoritesSidebar() {
         {favorites.length === 0 ? (
           <div className={styles.emptyState}>
             <Heart size={48} className={styles.emptyIcon} />
-            <p>Drag properties here to add them to favorites</p>
+            <p>Drag properties here to add them to favourites</p>
           </div>
         ) : (
           <div className={styles.list}>
