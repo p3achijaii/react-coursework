@@ -22,7 +22,7 @@ function PropertyCard({
   const handleFavouriteClick = (e) => {
     e.preventDefault();
     e.stopPropagation();
-    onToggleFavourirte?.(property);
+    onToggleFavourite?.(property);
   };
 
   return (
