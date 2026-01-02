@@ -80,7 +80,7 @@ function FindProperty() {
           <main>
             <div className={styles.resultsHeader}>
               <h2 className={styles.resultsCount}>
-                {filteredProperties.length} Properties found
+                {filteredProperties.length} Properties Found
               </h2>
             </div>
 
