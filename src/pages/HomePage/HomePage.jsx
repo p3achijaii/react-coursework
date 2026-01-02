@@ -162,9 +162,7 @@ function HomePage() {
       {/* CTA SECTION */}
       <section className={styles.ctaSection}>
         <div className={styles.ctaBlob1} />
-        <div Classname={styles.ctaBlob2} />
-        <div className={styles.ctaBlob3} />
-        <div Classname={styles.ctaBlob4} />
+        <div className={styles.ctaBlob2} />
 
         <div className={styles.ctaContent}>
           <h2 className={styles.ctaTitle}>Ready to find your dream home?</h2>
