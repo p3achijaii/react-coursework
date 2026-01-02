@@ -311,10 +311,12 @@
   background-color: #5c6e93;
   color: var(--color-white);
   box-shadow: var(--shadow-lg);
+  border: none;
 }
 
 .ctaMobileBtn:hover {
   background-color: #394d75;
+  border: none;
 }
 
 .ctaSection {
@@ -379,6 +381,7 @@
   filter: blur(64px);
   opacity: 0.5;
 }
+
 .ctaContent {
   position: relative;
   z-index: 10;
