@@ -414,8 +414,16 @@
   background-color: var(--color-cream-200);
   color: var(--color-sage-800);
   box-shadow: var(--shadow-lg);
+  border: none;
 }
 
 .ctaBtn:hover {
   background-color: var(--color-white);
+  border: none;
+}
+
+.ctaBtn:focus,
+.ctaBtn:focus-visible {
+  outline: none;
+  box-shadow: var(--shadow-lg);
 }
