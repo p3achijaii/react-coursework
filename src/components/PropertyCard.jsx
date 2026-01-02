@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { MapPin, Bed, Heart, FileText } from "lucide-react";
+import { MapPin, Bed, Bath, Heart, Maximize } from "lucide-react";
 import { useFavorites } from "../contexts/FavoritesContext";
 import { formatPrice, cn } from "../components/utils";
 import styles from "../components/PropertyCard.module.css";
@@ -75,8 +75,13 @@ function PropertyCard({ property, draggable = true }) {
             </div>
 
             <div className={styles.feature}>
-              <FileText className={styles.featureIcon} />
-              {property.tenure}
+              <Bath className={styles.featureIcon} />
+              {property.bathrooms} Bathrooms
+            </div>
+
+            <div className={styles.feature}>
+              <Maximize className={styles.featureIcon} />
+              {property.sqft} Sq Ft
             </div>
           </div>
         </div>
