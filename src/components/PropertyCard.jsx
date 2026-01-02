@@ -1,28 +1,30 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { MapPin, Bed, Heart, FileText } from "lucide-react";
-
-import { formatPrice } from "../components/utils";
-import { cn } from "../components/utils";
+import { useFavorites } from "../contexts/FavoritesContext";
+import { formatPrice, cn } from "../components/utils";
 import styles from "../components/PropertyCard.module.css";
 
-function PropertyCard({
-  property,
-  draggable = true,
-  isFavourite = false,
-  onToggleFavourirte,
-}) {
+function PropertyCard({ property, draggable = true }) {
+  const { isFavorite, addFavorite, removeFavorite } = useFavorites();
+
+  const isFavourite = isFavorite(property.id);
+
   const handleDragStart = (e) => {
     if (!draggable) return;
-
     e.dataTransfer.setData("application/json", JSON.stringify(property));
-    e.dataTransfer.effectAllowed = "move";
+    e.dataTransfer.effectAllowed = "copy";
   };
 
   const handleFavouriteClick = (e) => {
     e.preventDefault();
     e.stopPropagation();
-    onToggleFavourite?.(property);
+
+    if (isFavourite) {
+      removeFavorite(property.id);
+    } else {
+      addFavorite(property);
+    }
   };
 
   return (
@@ -37,7 +39,6 @@ function PropertyCard({
           />
           <div className={styles.overlay} />
 
-          {/* PROPERTY TYPE */}
           <span className={styles.tag}>{property.type}</span>
 
           {/* HEART */}
@@ -52,6 +53,7 @@ function PropertyCard({
                 styles.heartIcon,
                 isFavourite && styles.heartIconActive
               )}
+              fill={isFavourite ? "currentColor" : "none"}
             />
           </button>
         </div>
@@ -66,18 +68,15 @@ function PropertyCard({
             <div className={styles.price}>{formatPrice(property.price)}</div>
           </div>
 
-          {/* BOTTOM ROW */}
           <div className={styles.features}>
             <div className={styles.feature}>
               <Bed className={styles.featureIcon} />
-              <span className={styles.featureText}>
-                {property.bedrooms} Beds
-              </span>
+              {property.bedrooms} Beds
             </div>
 
             <div className={styles.feature}>
               <FileText className={styles.featureIcon} />
-              <span className={styles.featureText}>{property.tenure}</span>
+              {property.tenure}
             </div>
           </div>
         </div>
