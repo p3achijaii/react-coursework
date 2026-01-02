@@ -51,7 +51,7 @@
 
 @media (min-width: 1024px) {
   .content {
-    grid-template-columns: 20rem 1fr;
+    grid-template-columns: clamp(20rem, 22vw, 26rem) 1fr;
   }
 }
 
