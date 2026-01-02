@@ -49,13 +49,22 @@ function FavoritesSidebar() {
     <div className={cn(styles.sidebar, isOpen && styles.sidebarOpen)}>
       {/* Toggle */}
       <button onClick={() => setIsOpen(!isOpen)} className={styles.toggleBtn}>
-        {isOpen ? <X size={24} /> : <Heart size={24} />}
+        <Heart
+          size={24}
+          className={`${styles.icon} ${isOpen ? styles.hidden : ""}`}
+        />
+        <X
+          size={24}
+          className={`${styles.icon} ${isOpen ? "" : styles.hidden}`}
+        />
       </button>
 
       {/* Header */}
       <div className={styles.header}>
-        <h3 className={styles.title}>Favourites</h3>
-        <span className={styles.count}>{favorites.length}</span>
+        <div className={styles.titleContainer}>
+          <h3 className={styles.title}>Favourites</h3>
+          <span className={styles.count}>{favorites.length}</span>
+        </div>
 
         {favorites.length > 0 && (
           <button
@@ -63,7 +72,7 @@ function FavoritesSidebar() {
             className={styles.clearBtn}
             title="Remove all"
           >
-            <Trash2 size={16} />
+            <Trash2 size={20} />
           </button>
         )}
       </div>
