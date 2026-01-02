@@ -110,7 +110,7 @@ function FavoritesSidebar() {
                   onClick={() => removeFavorite(property.id)}
                   className={styles.removeBtn}
                 >
-                  <Trash2 size={16} />
+                  <Trash2 size={18} />
                 </button>
               </div>
             ))}
