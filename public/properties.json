@@ -2,6 +2,7 @@
   "properties": [
     {
       "id": "prop1",
+      "title": "Petts Wood Family Home",
       "type": "House",
       "bedrooms": 3,
       "bathrooms": 2,
@@ -34,11 +35,17 @@
         "images/prop1/prop1utility.jpg"
       ],
       "floorplan": "images/prop1/prop1floorplan.jpg",
+      "agent": {
+        "name": "Emma Thompson",
+        "phone": "020 8123 4567",
+        "image": ""
+      },
       "url": "properties/prop1.html",
       "added": { "month": "December", "day": 15, "year": 2025 }
     },
     {
       "id": "prop2",
+      "title": "Crofton Modern Flat",
       "type": "Flat",
       "bedrooms": 2,
       "bathrooms": 2,
@@ -71,11 +78,17 @@
         "images/prop2/prop2living.jpg"
       ],
       "floorplan": "images/prop2/prop2floorplan.jpg",
+      "agent": {
+        "name": "Daniel Foster",
+        "phone": "020 8456 7890",
+        "image": ""
+      },
       "url": "properties/prop2.html",
       "added": { "month": "September", "day": 14, "year": 2021 }
     },
     {
       "id": "prop3",
+      "title": "Chilham Period Cottage",
       "type": "Cottage",
       "bedrooms": 2,
       "bathrooms": 1,
@@ -107,11 +120,17 @@
         "images/prop3/prop3village.jpg"
       ],
       "floorplan": "images/prop3/prop3floorplan.jpg",
+      "agent": {
+        "name": "Emma Thompson",
+        "phone": "020 8123 4567",
+        "image": ""
+      },
       "url": "properties/prop3.html",
       "added": { "month": "August", "day": 5, "year": 2025 }
     },
     {
       "id": "prop4",
+      "title": "Petts Wood One-Bed Flat",
       "type": "Flat",
       "bedrooms": 1,
       "bathrooms": 1,
@@ -142,11 +161,17 @@
         "images/prop4/prop4wardrobes.jpg"
       ],
       "floorplan": "images/prop4/prop4floorplan.jpg",
+      "agent": {
+        "name": "Oliver Grant",
+        "phone": "020 8345 6789",
+        "image": ""
+      },
       "url": "properties/prop4.html",
       "added": { "month": "November", "day": 25, "year": 2025 }
     },
     {
       "id": "prop5",
+      "title": "Leeds Modern Villa",
       "type": "Villa",
       "bedrooms": 4,
       "bathrooms": 3,
@@ -178,11 +203,17 @@
         "images/prop5/prop5living1.jpg"
       ],
       "floorplan": "images/prop5/prop5floorplan.jpg",
+      "agent": {
+        "name": "James Cooper",
+        "phone": "020 8234 5678",
+        "image": ""
+      },
       "url": "properties/prop5.html",
       "added": { "month": "July", "day": 19, "year": 2022 }
     },
     {
       "id": "prop6",
+      "title": "Bromley Detached Family House",
       "type": "House",
       "bedrooms": 4,
       "bathrooms": 3,
@@ -215,11 +246,17 @@
         "images/prop6/prop6wine.jpg"
       ],
       "floorplan": "images/prop6/prop6floorplan.jpg",
+      "agent": {
+        "name": "James Cooper",
+        "phone": "020 8234 5678",
+        "image": ""
+      },
       "url": "properties/prop6.html",
       "added": { "month": "December", "day": 28, "year": 2025 }
     },
     {
       "id": "prop7",
+      "title": "Wilmslow Luxury Villa",
       "type": "Villa",
       "bedrooms": 5,
       "bathrooms": 4,
@@ -251,6 +288,11 @@
         "images/prop7/prop7living.jpg"
       ],
       "floorplan": "images/prop7/prop7floorplan.jpg",
+      "agent": {
+        "name": "Isabella Hughes",
+        "phone": "01625 678 901",
+        "image": ""
+      },
       "url": "properties/prop7.html",
       "added": { "month": "December", "day": 30, "year": 2025 }
     }
