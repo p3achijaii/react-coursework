@@ -11,12 +11,21 @@ import {
   Mail,
 } from "lucide-react";
 import Button from "../../components/ui/Button";
+import ImageLightbox from "../../components/ImageLightBox";
 import styles from "./PropertyDetail.module.css";
 
 function PropertyDetail() {
   const { id } = useParams();
   const [property, setProperty] = useState(null);
   const [currentTab, setCurrentTab] = useState("details");
+
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const openLightbox = (index) => {
+    setCurrentImageIndex(index);
+    setLightboxOpen(true);
+  };
 
   useEffect(() => {
     fetch("/properties.json")
@@ -45,7 +54,7 @@ function PropertyDetail() {
     <div className={styles.page}>
       {/* HERO IMAGE */}
       {property.picture && property.picture.length > 0 && (
-        <div className={styles.hero}>
+        <div className={styles.hero} onClick={() => openLightbox(0)}>
           <img
             src={property.picture[0]}
             alt={`Property at ${property.location}`}
@@ -83,6 +92,7 @@ function PropertyDetail() {
                 </div>
               </div>
 
+              {/* STATS */}
               <div className={styles.statsGrid}>
                 <div className={styles.statItem}>
                   <Bed className={styles.statIcon} />
@@ -105,8 +115,8 @@ function PropertyDetail() {
                 <div className={styles.dateAdded}>
                   <Calendar className={styles.calendarIcon} />
                   Listed on{" "}
-                  {(() => {
-                    const monthMap = {
+                  {`${String(property.added.day).padStart(2, "0")}/${
+                    {
                       January: "01",
                       February: "02",
                       March: "03",
@@ -119,12 +129,8 @@ function PropertyDetail() {
                       October: "10",
                       November: "11",
                       December: "12",
-                    };
-
-                    return `${String(property.added.day).padStart(2, "0")}/${
-                      monthMap[property.added.month]
-                    }/${property.added.year}`;
-                  })()}
+                    }[property.added.month]
+                  }/${property.added.year}`}
                 </div>
               )}
             </div>
@@ -156,7 +162,6 @@ function PropertyDetail() {
                 {/* DETAILS TAB */}
                 {currentTab === "details" && (
                   <>
-                    {/* Description */}
                     <div className={styles.cardInner}>
                       <h2 className={styles.sectionTitle}>About This Home</h2>
                       <p
@@ -167,7 +172,6 @@ function PropertyDetail() {
                       />
                     </div>
 
-                    {/* Features */}
                     <div className={styles.cardInner}>
                       <h2 className={styles.sectionTitle}>
                         Features & Amenities
@@ -184,7 +188,6 @@ function PropertyDetail() {
                       </div>
                     </div>
 
-                    {/* Gallery */}
                     <div className={styles.cardInner}>
                       <h2 className={styles.sectionTitle}>Gallery</h2>
                       <div className={styles.galleryGrid}>
@@ -207,7 +210,7 @@ function PropertyDetail() {
                 )}
 
                 {/* FLOORPLAN TAB */}
-                {currentTab === "floorplan" && (
+                {currentTab === "floorplan" && property.floorplan && (
                   <div className={styles.cardInner}>
                     <h2 className={styles.sectionTitle}>Floorplan</h2>
                     <div className={styles.floorplanWrapper}>
@@ -222,10 +225,16 @@ function PropertyDetail() {
                 )}
 
                 {/* LOCATION TAB */}
-                {currentTab === "location" && (
-                  <div className={styles.placeholder}>
-                    <p>Map placeholder</p>
-                    {/* <MapView lat={property.map.lat} lng={property.map.lng} /> */}
+                {currentTab === "location" && property.map && (
+                  <div className={styles.cardInner}>
+                    <h2 className={styles.sectionTitle}>Location</h2>
+                    {/* Map component, uncomment when ready */}
+                    {/* <MapView
+                      lat={property.map.lat}
+                      lng={property.map.lng}
+                      address={property.location}
+                    /> */}
+                    <div className={styles.placeholder}>Map placeholder</div>
                   </div>
                 )}
               </div>
@@ -234,7 +243,6 @@ function PropertyDetail() {
 
           {/* SIDEBAR */}
           <div className={styles.sidebar}>
-            {/* Agent Card */}
             {property.agent && (
               <div className={styles.agentCard}>
                 <div className={styles.agentHeader}>
@@ -264,7 +272,7 @@ function PropertyDetail() {
                   </Button>
                 </div>
 
-                <div className={styles.fromContainer}>
+                <div className={styles.formContainer}>
                   <h4 className={styles.formTitle}>Interested?</h4>
                   <p className={styles.formText}>
                     Schedule a tour with <b>{property.agent.name}</b> to see
@@ -286,7 +294,6 @@ function PropertyDetail() {
                       placeholder="Your Phone"
                       className={styles.formInput}
                     />
-
                     <Button className={styles.submitBtn}>Request Tour</Button>
                   </form>
                 </div>
@@ -295,6 +302,18 @@ function PropertyDetail() {
           </div>
         </div>
       </div>
+
+      {/* LIGHTBOX */}
+      <ImageLightbox
+        isOpen={lightboxOpen}
+        onClose={() => setLightboxOpen(false)}
+        images={[
+          ...property.picture,
+          ...(property.floorplan ? [property.floorplan] : []),
+        ]}
+        currentIndex={currentImageIndex}
+        onIndexChange={setCurrentImageIndex}
+      />
     </div>
   );
 }
