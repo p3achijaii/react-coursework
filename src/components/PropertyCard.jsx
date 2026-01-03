@@ -33,7 +33,7 @@ function PropertyCard({ property, draggable = true }) {
         {/* IMAGE */}
         <div className={styles.imageContainer}>
           <img
-            src={`/${property.picture}`}
+            src={property.picture[0]}
             alt={`${property.type} in ${property.location}`}
             className={styles.image}
           />
