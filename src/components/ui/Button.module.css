@@ -7,6 +7,7 @@
   transition: all 0.2s ease;
   border: none;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .button:hover {
@@ -17,15 +18,15 @@
   transform: scale(0.98);
 }
 
-.button:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px var(--color-terracotta-400),
-    0 0 0 4px var(--color-white);
-}
-
 .button:disabled {
   opacity: 0.5;
   pointer-events: none;
+}
+
+/* Remove default focus flashes globally */
+.button:focus {
+  outline: none;
+  box-shadow: none;
 }
 
 /* VARIANTS */
@@ -44,11 +45,28 @@
 .secondary {
   background-color: var(--color-secondary-500);
   color: var(--color-white);
-  box-shadow: var(--shadow-soft);
+  border-radius: var(--radius-2xl);
+  font-weight: 500;
+  padding: 1rem 2rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: none;
 }
 
 .secondary:hover {
   background-color: var(--color-secondary-600);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.secondary:active {
+  transform: translateY(1px);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  background-color: var(--color-secondary-700);
+}
+
+.secondary:focus {
+  outline: none;
+  box-shadow: 0 0 0 0 transparent;
 }
 
 .outline {
@@ -87,6 +105,7 @@
   font-size: 1.125rem;
 }
 
+/* LOADING STATE */
 .spinner {
   margin-right: 0.5rem;
   height: 1rem;
