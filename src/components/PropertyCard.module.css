@@ -10,13 +10,13 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  cursor: pointer;
+  cursor: default;
   border: 1px solid var(--color-cream-200);
 }
 
 .card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-xl);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 /* IMAGE */
@@ -30,11 +30,11 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.5s ease;
+  transition: transform 0.3s ease;
 }
 
 .card:hover .image {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 .overlay {
@@ -167,4 +167,57 @@
 .featureLabel {
   font-size: 0.75rem;
   color: var(--color-stone-500);
+}
+
+.viewButtonWrapper {
+  margin-top: 1.25rem;
+}
+
+.viewButtonFull {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-white);
+  background-color: var(--color-terracotta-500);
+  border-radius: var(--radius-xl);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  letter-spacing: 0.5px;
+  border: 1px solid transparent;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.viewButtonIcon {
+  color: var(--color-white);
+  transition: transform 0.3s ease;
+}
+
+.viewButtonFull:hover {
+  background-color: var(--color-terracotta-600);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.viewButtonFull:hover .viewButtonIcon {
+  transform: translateX(4px);
+}
+
+.viewButtonFull:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  background-color: var(--color-terracotta-700);
+}
+
+.viewButtonFull span {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }

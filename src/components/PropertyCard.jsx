@@ -1,13 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { MapPin, Bed, Bath, Heart, Maximize } from "lucide-react";
+import { MapPin, Bed, Bath, Heart, Maximize, Home } from "lucide-react";
 import { useFavorites } from "../contexts/FavoritesContext";
 import { formatPrice, cn } from "../components/utils";
 import styles from "../components/PropertyCard.module.css";
 
 function PropertyCard({ property, draggable = true }) {
   const { isFavorite, addFavorite, removeFavorite } = useFavorites();
-
   const isFavourite = isFavorite(property.id);
 
   const handleDragStart = (e) => {
@@ -19,17 +18,13 @@ function PropertyCard({ property, draggable = true }) {
   const handleFavouriteClick = (e) => {
     e.preventDefault();
     e.stopPropagation();
-
-    if (isFavourite) {
-      removeFavorite(property.id);
-    } else {
-      addFavorite(property);
-    }
+    if (isFavourite) removeFavorite(property.id);
+    else addFavorite(property);
   };
 
   return (
     <div draggable={draggable} onDragStart={handleDragStart}>
-      <Link to={`/property/${property.id}`} className={styles.card}>
+      <div className={styles.card}>
         {/* IMAGE */}
         <div className={styles.imageContainer}>
           <img
@@ -38,7 +33,6 @@ function PropertyCard({ property, draggable = true }) {
             className={styles.image}
           />
           <div className={styles.overlay} />
-
           <span className={styles.tag}>{property.type}</span>
 
           {/* HEART */}
@@ -73,19 +67,28 @@ function PropertyCard({ property, draggable = true }) {
               <Bed className={styles.featureIcon} />
               {property.bedrooms} Beds
             </div>
-
             <div className={styles.feature}>
               <Bath className={styles.featureIcon} />
               {property.bathrooms} Bathrooms
             </div>
-
             <div className={styles.feature}>
               <Maximize className={styles.featureIcon} />
               {property.sqft} Sq Ft
             </div>
           </div>
+
+          {/* VIEW DETAILS BUTTON */}
+          <div className={styles.viewButtonWrapper}>
+            <Link
+              to={`/property/${property.id}`}
+              className={styles.viewButtonFull}
+            >
+              <Home size={16} className={styles.viewButtonIcon} />
+              <span>View Details</span>
+            </Link>
+          </div>
         </div>
-      </Link>
+      </div>
     </div>
   );
 }
