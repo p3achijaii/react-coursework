@@ -35,7 +35,7 @@
       ],
       "floorplan": "images/prop1/prop1floorplan.jpg",
       "url": "properties/prop1.html",
-      "added": { "month": "October", "day": 12, "year": 2024 }
+      "added": { "month": "December", "day": 15, "year": 2025 }
     },
     {
       "id": "prop2",
@@ -143,7 +143,7 @@
       ],
       "floorplan": "images/prop4/prop4floorplan.jpg",
       "url": "properties/prop4.html",
-      "added": { "month": "July", "day": 3, "year": 2024 }
+      "added": { "month": "November", "day": 25, "year": 2025 }
     },
     {
       "id": "prop5",
@@ -216,7 +216,7 @@
       ],
       "floorplan": "images/prop6/prop6floorplan.jpg",
       "url": "properties/prop6.html",
-      "added": { "month": "May", "day": 15, "year": 2023 }
+      "added": { "month": "December", "day": 28, "year": 2025 }
     },
     {
       "id": "prop7",
@@ -252,7 +252,7 @@
       ],
       "floorplan": "images/prop7/prop7floorplan.jpg",
       "url": "properties/prop7.html",
-      "added": { "month": "December", "day": 2, "year": 2025 }
+      "added": { "month": "December", "day": 30, "year": 2025 }
     }
   ]
 }
