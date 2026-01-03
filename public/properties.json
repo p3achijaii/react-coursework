@@ -24,21 +24,21 @@
         "lng": 0.0734
       },
       "picture": [
-        "images/prop1/prop1pic1small.png",
-        "images/prop1/prop1bath.jpg",
-        "images/prop1/prop1bed1.jpg",
-        "images/prop1/prop1bed2.jpg",
-        "images/prop1/prop1dinner.jpg",
-        "images/prop1/prop1garden.jpg",
-        "images/prop1/prop1kitchen.jpg",
-        "images/prop1/prop1living.jpg",
-        "images/prop1/prop1utility.jpg"
+        "/images/prop1/prop1pic1small.png",
+        "/images/prop1/prop1bath.jpg",
+        "/images/prop1/prop1bed1.jpg",
+        "/images/prop1/prop1bed2.jpg",
+        "/images/prop1/prop1dinner.jpg",
+        "/images/prop1/prop1garden.jpg",
+        "/images/prop1/prop1kitchen.jpg",
+        "/images/prop1/prop1living.jpg",
+        "/images/prop1/prop1utility.jpg"
       ],
-      "floorplan": "images/prop1/prop1floorplan.jpg",
+      "floorplan": "/images/prop1/prop1floorplan.jpg",
       "agent": {
         "name": "Emma Thompson",
         "phone": "020 8123 4567",
-        "image": "images/prop1/prop1and3agent.jpg"
+        "image": "/images/prop1/prop1and3agent.jpg"
       },
       "url": "properties/prop1.html",
       "added": { "month": "December", "day": 15, "year": 2025 }
@@ -67,21 +67,21 @@
         "lng": 0.0867
       },
       "picture": [
-        "images/prop2/prop2pic1small.png",
-        "images/prop2/prop2balcony.jpg",
-        "images/prop2/prop2bath1.jpg",
-        "images/prop2/prop2bath2.jpg",
-        "images/prop2/prop2bed1.jpg",
-        "images/prop2/prop2bed2.jpg",
-        "images/prop2/prop2dining.jpg",
-        "images/prop2/prop2laundry.jpg",
-        "images/prop2/prop2living.jpg"
+        "/images/prop2/prop2pic1small.png",
+        "/images/prop2/prop2balcony.jpg",
+        "/images/prop2/prop2bath1.jpg",
+        "/images/prop2/prop2bath2.jpg",
+        "/images/prop2/prop2bed1.jpg",
+        "/images/prop2/prop2bed2.jpg",
+        "/images/prop2/prop2dining.jpg",
+        "/images/prop2/prop2laundry.jpg",
+        "/images/prop2/prop2living.jpg"
       ],
-      "floorplan": "images/prop2/prop2floorplan.jpg",
+      "floorplan": "/images/prop2/prop2floorplan.jpg",
       "agent": {
         "name": "Daniel Foster",
         "phone": "020 8456 7890",
-        "image": "images/prop2/prop2agent.jpg"
+        "image": "/images/prop2/prop2agent.jpg"
       },
       "url": "properties/prop2.html",
       "added": { "month": "September", "day": 14, "year": 2021 }
@@ -109,21 +109,21 @@
         "lng": 0.9841
       },
       "picture": [
-        "images/prop3/prop3pic1small.jpg",
-        "images/prop3/prop3bath.jpg",
-        "images/prop3/prop3bed1.jpg",
-        "images/prop3/prop3bed2.jpg",
-        "images/prop3/prop3dining.jpg",
-        "images/prop3/prop3garden.jpg",
-        "images/prop3/prop3kitchen.jpg",
-        "images/prop3/prop3living.jpg",
-        "images/prop3/prop3village.jpg"
+        "/images/prop3/prop3pic1small.jpg",
+        "/images/prop3/prop3bath.jpg",
+        "/images/prop3/prop3bed1.jpg",
+        "/images/prop3/prop3bed2.jpg",
+        "/images/prop3/prop3dining.jpg",
+        "/images/prop3/prop3garden.jpg",
+        "/images/prop3/prop3kitchen.jpg",
+        "/images/prop3/prop3living.jpg",
+        "/images/prop3/prop3village.jpg"
       ],
-      "floorplan": "images/prop3/prop3floorplan.jpg",
+      "floorplan": "/images/prop3/prop3floorplan.jpg",
       "agent": {
         "name": "Emma Thompson",
         "phone": "020 8123 4567",
-        "image": "images/prop3/prop1and3agent.jpg"
+        "image": "/images/prop3/prop1and3agent.jpg"
       },
       "url": "properties/prop3.html",
       "added": { "month": "August", "day": 5, "year": 2025 }
@@ -151,20 +151,20 @@
         "lng": 0.0758
       },
       "picture": [
-        "images/prop4/prop4pic1small.jpg",
-        "images/prop4/prop4balcony.jpg",
-        "images/prop4/prop4bath.jpg",
-        "images/prop4/prop4bed1.jpg",
-        "images/prop4/prop4dining.jpg",
-        "images/prop4/prop4kitchen.jpg",
-        "images/prop4/prop4living.jpg",
-        "images/prop4/prop4wardrobes.jpg"
+        "/images/prop4/prop4pic1small.jpg",
+        "/images/prop4/prop4balcony.jpg",
+        "/images/prop4/prop4bath.jpg",
+        "/images/prop4/prop4bed1.jpg",
+        "/images/prop4/prop4dining.jpg",
+        "/images/prop4/prop4kitchen.jpg",
+        "/images/prop4/prop4living.jpg",
+        "/images/prop4/prop4wardrobes.jpg"
       ],
-      "floorplan": "images/prop4/prop4floorplan.jpg",
+      "floorplan": "/images/prop4/prop4floorplan.jpg",
       "agent": {
         "name": "Oliver Grant",
         "phone": "020 8345 6789",
-        "image": "images/prop4/prop4agent.jpg"
+        "image": "/images/prop4/prop4agent.jpg"
       },
       "url": "properties/prop4.html",
       "added": { "month": "November", "day": 25, "year": 2025 }
@@ -192,21 +192,21 @@
         "lng": -1.5303
       },
       "picture": [
-        "images/prop5/prop5pic1small.jpg",
-        "images/prop5/prop5bath.jpg",
-        "images/prop5/prop5bed1.jpg",
-        "images/prop5/prop5bed2.jpg",
-        "images/prop5/prop5bed3.jpg",
-        "images/prop5/prop5dining.jpg",
-        "images/prop5/prop5garden.jpg",
-        "images/prop5/prop5kitchen.jpg",
-        "images/prop5/prop5living1.jpg"
+        "/images/prop5/prop5pic1small.jpg",
+        "/images/prop5/prop5bath.jpg",
+        "/images/prop5/prop5bed1.jpg",
+        "/images/prop5/prop5bed2.jpg",
+        "/images/prop5/prop5bed3.jpg",
+        "/images/prop5/prop5dining.jpg",
+        "/images/prop5/prop5garden.jpg",
+        "/images/prop5/prop5kitchen.jpg",
+        "/images/prop5/prop5living1.jpg"
       ],
-      "floorplan": "images/prop5/prop5floorplan.jpg",
+      "floorplan": "/images/prop5/prop5floorplan.jpg",
       "agent": {
         "name": "James Cooper",
         "phone": "020 8234 5678",
-        "image": "images/prop5/prop5and6agent.jpg"
+        "image": "/images/prop5/prop5and6agent.jpg"
       },
       "url": "properties/prop5.html",
       "added": { "month": "July", "day": 19, "year": 2022 }
@@ -235,21 +235,21 @@
         "lng": 0.0226
       },
       "picture": [
-        "images/prop6/prop6pic1small.jpg",
-        "images/prop6/prop6bath.jpg",
-        "images/prop6/prop6bed1.jpg",
-        "images/prop6/prop6dining.jpg",
-        "images/prop6/prop6garage.jpg",
-        "images/prop6/prop6garden.jpg",
-        "images/prop6/prop6kitchen.jpg",
-        "images/prop6/prop6living.jpg",
-        "images/prop6/prop6wine.jpg"
+        "/images/prop6/prop6pic1small.jpg",
+        "/images/prop6/prop6bath.jpg",
+        "/images/prop6/prop6bed1.jpg",
+        "/images/prop6/prop6dining.jpg",
+        "/images/prop6/prop6garage.jpg",
+        "/images/prop6/prop6garden.jpg",
+        "/images/prop6/prop6kitchen.jpg",
+        "/images/prop6/prop6living.jpg",
+        "/images/prop6/prop6wine.jpg"
       ],
-      "floorplan": "images/prop6/prop6floorplan.jpg",
+      "floorplan": "/images/prop6/prop6floorplan.jpg",
       "agent": {
         "name": "James Cooper",
         "phone": "020 8234 5678",
-        "image": "images/prop6/prop5and6agent.jpg"
+        "image": "/images/prop6/prop5and6agent.jpg"
       },
       "url": "properties/prop6.html",
       "added": { "month": "December", "day": 28, "year": 2025 }
@@ -277,21 +277,21 @@
         "lng": -2.2315
       },
       "picture": [
-        "images/prop7/prop7pic1small.jpg",
-        "images/prop7/prop7activity.jpg",
-        "images/prop7/prop7balcony.jpg",
-        "images/prop7/prop7bath.jpg",
-        "images/prop7/prop7bed1.jpg",
-        "images/prop7/prop7dining.jpg",
-        "images/prop7/prop7garden.jpg",
-        "images/prop7/propkitchen.jpg",
-        "images/prop7/prop7living.jpg"
+        "/images/prop7/prop7pic1small.jpg",
+        "/images/prop7/prop7activity.jpg",
+        "/images/prop7/prop7balcony.jpg",
+        "/images/prop7/prop7bath.jpg",
+        "/images/prop7/prop7bed1.jpg",
+        "/images/prop7/prop7dining.jpg",
+        "/images/prop7/prop7garden.jpg",
+        "/images/prop7/propkitchen.jpg",
+        "/images/prop7/prop7living.jpg"
       ],
-      "floorplan": "images/prop7/prop7floorplan.jpg",
+      "floorplan": "/images/prop7/prop7floorplan.jpg",
       "agent": {
         "name": "Isabella Hughes",
         "phone": "01625 678 901",
-        "image": "images/prop7/prop7agent.jpg"
+        "image": "/images/prop7/prop7agent.jpg"
       },
       "url": "properties/prop7.html",
       "added": { "month": "December", "day": 30, "year": 2025 }
