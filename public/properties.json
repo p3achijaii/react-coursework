@@ -18,7 +18,7 @@
         "Nearby Transport"
       ],
       "location": "Petts Wood Road, Petts Wood, Orpington BR5",
-      "picture": "images/prop1pic1small.png",
+      "picture": "images/prop1/prop1pic1small.png",
       "url": "properties/prop1.html",
       "added": { "month": "October", "day": 12, "year": 2024 }
     },
@@ -40,7 +40,7 @@
         "Wet Room"
       ],
       "location": "Crofton Road Orpington BR6",
-      "picture": "images/prop2pic1small.png",
+      "picture": "images/prop2/prop2pic1small.png",
       "url": "properties/prop2.html",
       "added": { "month": "September", "day": 14, "year": 2021 }
     },
@@ -61,7 +61,7 @@
         "Village Setting"
       ],
       "location": "High Street, Chilham, Canterbury CT4",
-      "picture": "images/prop3pic1small.jpg",
+      "picture": "images/prop3/prop3pic1small.jpg",
       "url": "properties/prop3.html",
       "added": { "month": "August", "day": 5, "year": 2025 }
     },
@@ -82,7 +82,7 @@
         "Gas Central Heating"
       ],
       "location": "Lakeswood Road, Petts Wood BR5",
-      "picture": "images/prop4pic1small.jpg",
+      "picture": "images/prop4/prop4pic1small.jpg",
       "url": "properties/prop4.html",
       "added": { "month": "July", "day": 3, "year": 2024 }
     },
@@ -103,7 +103,7 @@
         "Modern Design"
       ],
       "location": "Dock Street, Leeds LS10",
-      "picture": "images/prop5pic1small.jpg",
+      "picture": "images/prop5/prop5pic1small.jpg",
       "url": "properties/prop5.html",
       "added": { "month": "July", "day": 19, "year": 2022 }
     },
@@ -125,7 +125,7 @@
         "Off-Street Parking"
       ],
       "location": "Ridgeway Drive, Bromley BR2",
-      "picture": "images/prop6pic1small.jpg",
+      "picture": "images/prop6/prop6pic1small.jpg",
       "url": "properties/prop6.html",
       "added": { "month": "May", "day": 15, "year": 2023 }
     },
@@ -146,7 +146,7 @@
         "Exclusive Location"
       ],
       "location": "Oakwood Drive, Wilmslow SK9",
-      "picture": "images/prop7pic1small.jpg",
+      "picture": "images/prop7/prop7pic1small.jpg",
       "url": "properties/prop7.html",
       "added": { "month": "December", "day": 2, "year": 2025 }
     }
