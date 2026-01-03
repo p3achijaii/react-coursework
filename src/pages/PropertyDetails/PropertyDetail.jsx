@@ -63,6 +63,15 @@ function PropertyDetail() {
                     {property.location}
                   </div>
                 </div>
+                <div className={styles.priceContainer}>
+                  <div className={styles.price}>
+                    £{property.price.toLocaleString()}
+                  </div>
+                  <div className={styles.typeTag}>
+                    {property.type}{" "}
+                    {property.tenure ? `• ${property.tenure}` : ""}
+                  </div>
+                </div>
               </div>
             </div>
           </div>
