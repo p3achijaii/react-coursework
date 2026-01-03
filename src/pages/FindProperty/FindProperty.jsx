@@ -15,6 +15,7 @@ function FindProperty() {
     dateAdded: "",
   });
 
+  // Load properties from JSON
   useEffect(() => {
     fetch("/properties.json")
       .then((res) => res.json())
@@ -22,19 +23,38 @@ function FindProperty() {
       .catch((err) => console.error("Failed to load properties:", err));
   }, []);
 
+  // Filter properties
   const filteredProperties = useMemo(() => {
+    const monthMap = {
+      January: 0,
+      February: 1,
+      March: 2,
+      April: 3,
+      May: 4,
+      June: 5,
+      July: 6,
+      August: 7,
+      September: 8,
+      October: 9,
+      November: 10,
+      December: 11,
+    };
+
     return properties.filter((property) => {
+      // Type filter
       if (filters.type && property.type !== filters.type) return false;
 
+      // Price filters
       if (filters.minPrice && property.price < Number(filters.minPrice))
         return false;
-
       if (filters.maxPrice && property.price > Number(filters.maxPrice))
         return false;
 
+      // Bedrooms filter
       if (filters.beds && property.bedrooms < Number(filters.beds))
         return false;
 
+      // Postcode / location filter
       if (
         filters.postcode &&
         !property.location
@@ -43,14 +63,16 @@ function FindProperty() {
       )
         return false;
 
+      // Date Added filter
       if (filters.dateAdded) {
         const addedDate = new Date(
-          `${property.added.month} ${property.added.day}, ${property.added.year}`
+          property.added.year,
+          monthMap[property.added.month],
+          property.added.day
         );
 
         const daysAgo =
           (Date.now() - addedDate.getTime()) / (1000 * 60 * 60 * 24);
-
         if (daysAgo > Number(filters.dateAdded)) return false;
       }
 
@@ -71,12 +93,12 @@ function FindProperty() {
         </div>
 
         <div className={styles.content}>
-          {/* Filters */}
+          {/* FILTERS */}
           <aside>
             <SearchFilters filters={filters} setFilters={setFilters} />
           </aside>
 
-          {/* Results */}
+          {/* RESULTS */}
           <main>
             <div className={styles.resultsHeader}>
               <h2 className={styles.resultsCount}>
