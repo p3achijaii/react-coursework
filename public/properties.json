@@ -38,7 +38,7 @@
       "agent": {
         "name": "Emma Thompson",
         "phone": "020 8123 4567",
-        "image": ""
+        "image": "images/prop1/prop1and3agent.jpg"
       },
       "url": "properties/prop1.html",
       "added": { "month": "December", "day": 15, "year": 2025 }
@@ -81,7 +81,7 @@
       "agent": {
         "name": "Daniel Foster",
         "phone": "020 8456 7890",
-        "image": ""
+        "image": "images/prop2/prop2agent.jpg"
       },
       "url": "properties/prop2.html",
       "added": { "month": "September", "day": 14, "year": 2021 }
@@ -123,7 +123,7 @@
       "agent": {
         "name": "Emma Thompson",
         "phone": "020 8123 4567",
-        "image": ""
+        "image": "images/prop3/prop1and3agent.jpg"
       },
       "url": "properties/prop3.html",
       "added": { "month": "August", "day": 5, "year": 2025 }
@@ -164,7 +164,7 @@
       "agent": {
         "name": "Oliver Grant",
         "phone": "020 8345 6789",
-        "image": ""
+        "image": "images/prop4/prop4agent.jpg"
       },
       "url": "properties/prop4.html",
       "added": { "month": "November", "day": 25, "year": 2025 }
@@ -206,7 +206,7 @@
       "agent": {
         "name": "James Cooper",
         "phone": "020 8234 5678",
-        "image": ""
+        "image": "images/prop5/prop5and6agent.jpg"
       },
       "url": "properties/prop5.html",
       "added": { "month": "July", "day": 19, "year": 2022 }
@@ -249,7 +249,7 @@
       "agent": {
         "name": "James Cooper",
         "phone": "020 8234 5678",
-        "image": ""
+        "image": "images/prop6/prop5and6agent.jpg"
       },
       "url": "properties/prop6.html",
       "added": { "month": "December", "day": 28, "year": 2025 }
@@ -291,7 +291,7 @@
       "agent": {
         "name": "Isabella Hughes",
         "phone": "01625 678 901",
-        "image": ""
+        "image": "images/prop7/prop7agent.jpg"
       },
       "url": "properties/prop7.html",
       "added": { "month": "December", "day": 30, "year": 2025 }
