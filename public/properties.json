@@ -18,7 +18,22 @@
         "Nearby Transport"
       ],
       "location": "Petts Wood Road, Petts Wood, Orpington BR5",
-      "picture": "images/prop1/prop1pic1small.png",
+      "map": {
+        "lat": 51.3906,
+        "lng": 0.0734
+      },
+      "picture": [
+        "images/prop1/prop1pic1small.png",
+        "images/prop1/prop1bath.jpg",
+        "images/prop1/prop1bed1.jpg",
+        "images/prop1/prop1bed2.jpg",
+        "images/prop1/prop1dinner",
+        "images/prop1/prop1garden.jpg",
+        "images/prop1/prop1kitchen.jpg",
+        "images/prop1/prop1living.jpg",
+        "images/prop1/prop1utility.jpg"
+      ],
+      "floorplan": "images/prop1/prop1floorplan.jpg",
       "url": "properties/prop1.html",
       "added": { "month": "October", "day": 12, "year": 2024 }
     },
@@ -40,7 +55,22 @@
         "Wet Room"
       ],
       "location": "Crofton Road Orpington BR6",
-      "picture": "images/prop2/prop2pic1small.png",
+      "map": {
+        "lat": 51.3739,
+        "lng": 0.0867
+      },
+      "picture": [
+        "images/prop2/prop2pic1small.png",
+        "images/prop2/prop2balcony.jpg",
+        "images/prop2/prop2bath1.jpg",
+        "images/prop2/prop2bath2.jpg",
+        "images/prop2/prop2bed1.jpg",
+        "images/prop2/prop2bed2.jpg",
+        "images/prop2/prop2dining.jpg",
+        "images/prop2/prop2laundry.jpg",
+        "images/prop2/prop2living.jpg"
+      ],
+      "floorplan": "images/prop2/prop2floorplan.jpg",
       "url": "properties/prop2.html",
       "added": { "month": "September", "day": 14, "year": 2021 }
     },
@@ -61,7 +91,22 @@
         "Village Setting"
       ],
       "location": "High Street, Chilham, Canterbury CT4",
-      "picture": "images/prop3/prop3pic1small.jpg",
+      "map": {
+        "lat": 51.1854,
+        "lng": 0.9841
+      },
+      "picture": [
+        "images/prop3/prop3pic1small.jpg",
+        "images/prop3/prop3bath.jpg",
+        "images/prop3/prop3bed1.jpg",
+        "images/prop3/prop3bed2.jpg",
+        "images/prop3/prop3dining.jpg",
+        "images/prop3/prop3garden.jpg",
+        "images/prop3/prop3kitchen.jpg",
+        "images/prop3/prop3living.jpg",
+        "images/prop3/prop3village.jpg"
+      ],
+      "floorplan": "images/prop3/prop3floorplan.jpg",
       "url": "properties/prop3.html",
       "added": { "month": "August", "day": 5, "year": 2025 }
     },
@@ -82,7 +127,21 @@
         "Gas Central Heating"
       ],
       "location": "Lakeswood Road, Petts Wood BR5",
-      "picture": "images/prop4/prop4pic1small.jpg",
+      "map": {
+        "lat": 51.3882,
+        "lng": 0.0758
+      },
+      "picture": [
+        "images/prop4/prop4pic1small.jpg",
+        "images/prop4/prop4balcony.jpg",
+        "images/prop4/prop4bath.jpg",
+        "images/prop4/prop4bed1.jpg",
+        "images/prop4/prop4dining.jpg",
+        "images/prop4/prop4kitchen.jpg",
+        "images/prop4/prop4living.jpg",
+        "images/prop4/prop4wardrobes.jpg"
+      ],
+      "floorplan": "images/prop4/prop4floorplan.jpg",
       "url": "properties/prop4.html",
       "added": { "month": "July", "day": 3, "year": 2024 }
     },
@@ -103,7 +162,22 @@
         "Modern Design"
       ],
       "location": "Dock Street, Leeds LS10",
-      "picture": "images/prop5/prop5pic1small.jpg",
+      "map": {
+        "lat": 53.7906,
+        "lng": -1.5303
+      },
+      "picture": [
+        "images/prop5/prop5pic1small.jpg",
+        "images/prop5/prop5bath.jpg",
+        "images/prop5/prop5bed1.jpg",
+        "images/prop5/prop5bed2.jpg",
+        "images/prop5/prop5bed3.jpg",
+        "images/prop5/prop5dining.jpg",
+        "images/prop5/prop5garden.jpg",
+        "images/prop5/prop5kitchen.jpg",
+        "images/prop5/prop5living1.jpg"
+      ],
+      "floorplan": "images/prop5/prop5floorplan.jpg",
       "url": "properties/prop5.html",
       "added": { "month": "July", "day": 19, "year": 2022 }
     },
@@ -125,7 +199,22 @@
         "Off-Street Parking"
       ],
       "location": "Ridgeway Drive, Bromley BR2",
-      "picture": "images/prop6/prop6pic1small.jpg",
+      "map": {
+        "lat": 51.3999,
+        "lng": 0.0226
+      },
+      "picture": [
+        "images/prop6/prop6pic1small.jpg",
+        "images/prop6/prop6bath.jpg",
+        "images/prop6/prop6bed1.jpg",
+        "images/prop6/prop6dining.jpg",
+        "images/prop6/prop6garage.jpg",
+        "images/prop6/prop6garden.jpg",
+        "images/prop6/prop6kitchen.jpg",
+        "images/prop6/prop6living.jpg",
+        "images/prop6/prop6wine.jpg"
+      ],
+      "floorplan": "images/prop6/prop6floorplan.jpg",
       "url": "properties/prop6.html",
       "added": { "month": "May", "day": 15, "year": 2023 }
     },
@@ -146,7 +235,22 @@
         "Exclusive Location"
       ],
       "location": "Oakwood Drive, Wilmslow SK9",
-      "picture": "images/prop7/prop7pic1small.jpg",
+      "map": {
+        "lat": 53.3261,
+        "lng": -2.2315
+      },
+      "picture": [
+        "images/prop7/prop7pic1small.jpg",
+        "images/prop7/prop7activity.jpg",
+        "images/prop7/prop7balcony.jpg",
+        "images/prop7/prop7bath.jpg",
+        "images/prop7/prop7bed1.jpg",
+        "images/prop7/prop7dining.jpg",
+        "images/prop7/prop7garden.jpg",
+        "images/prop7/propkitchen.jpg",
+        "images/prop7/prop7living.jpg"
+      ],
+      "floorplan": "images/prop7/prop7floorplan.jpg",
       "url": "properties/prop7.html",
       "added": { "month": "December", "day": 2, "year": 2025 }
     }
