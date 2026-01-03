@@ -16,7 +16,7 @@ import styles from "./PropertyDetail.module.css";
 function PropertyDetail() {
   const { id } = useParams();
   const [property, setProperty] = useState(null);
-  const [currentTab, setCurrentTab] = useState("overview");
+  const [currentTab, setCurrentTab] = useState("details");
 
   useEffect(() => {
     fetch("/properties.json")
