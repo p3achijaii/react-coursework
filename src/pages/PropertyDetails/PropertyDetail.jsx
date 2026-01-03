@@ -208,11 +208,20 @@ function PropertyDetail() {
 
                 {/* FLOORPLAN TAB */}
                 {currentTab === "floorplan" && (
-                  <div className={styles.placeholder}>
-                    <p>Floorplan placeholder</p>
+                  <div className={styles.cardInner}>
+                    <h2 className={styles.sectionTitle}>Floorplan</h2>
+                    <div className={styles.floorplanWrapper}>
+                      <img
+                        src={property.floorplan}
+                        alt={`Floorplan of ${property.title}`}
+                        className={styles.floorplanImage}
+                        onClick={() => openLightbox(property.picture.length)}
+                      />
+                    </div>
                   </div>
                 )}
-                {/* FLOORPLAN TAB */}
+
+                {/* LOCATION TAB */}
                 {currentTab === "location" && (
                   <div className={styles.placeholder}>
                     <p>Map placeholder</p>
