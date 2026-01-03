@@ -10,15 +10,12 @@
       "tenure": "Freehold",
       "description": "Attractive three bedroom semi-detached family home situated within 0.5 miles of Petts Wood station with fast trains to London and within easy walking distance of local shops, schools, bus routes and National Trust woodland. The property comprises; two receptions, fitted 18'9 x 10'1 kitchen/breakfast room and conservatory. The property also benefits from having a utility room and cloakroom. To the first floor there are three bedrooms and a family bathroom with separate WC. Additional features include double glazing, gas central heating and a well presented interior...",
       "features": [
-        "Semi-Detached",
+        "Garden",
         "Conservatory",
         "Utility Room",
-        "Cloakroom",
-        "Double Glazing",
         "Gas Central Heating",
-        "Close to Station",
-        "Nearby Schools",
-        "National Trust Woodland Nearby"
+        "Double Glazing",
+        "Nearby Transport"
       ],
       "location": "Petts Wood Road, Petts Wood, Orpington BR5",
       "picture": "images/prop1pic1small.png",
@@ -33,17 +30,14 @@
       "sqft": 950,
       "price": 399995,
       "tenure": "Freehold",
-      "description": "Presented in excellent decorative order throughout is this two double bedroom, two bathroom, garden flat. <br>The modern fitted kitchen is open plan to the living room which boasts solid wooden floors and includes integrated appliances including a dishwasher & a washing machine. This large open plan benefits from bi folding doors onto a secluded private courtyard garden. Both bedrooms are double sized, and the family bathroom boasts a matching three piece suite a shower attachment over the bath. There is also a separate wet room. There are walnut doors throughout and wiring for Sky TV/aerial points in the living room/kitchen and both bedrooms.<br>This apartment being only five years old, is still under a 10 year building guarantee...",
+      "description": "Presented in excellent decorative order throughout is this two double bedroom, two bathroom, garden flat. <br>The modern fitted kitchen is open plan to the living room which boasts solid wooden floors and includes integrated appliances including a dishwasher & a washing machine. This large open plan benefits from bi folding doors onto a secluded private courtyard garden...",
       "features": [
-        "Private Courtyard Garden",
+        "Private Garden",
         "Open-Plan Living",
         "Bi-Folding Doors",
         "Integrated Appliances",
-        "Solid Wood Floors",
-        "Two Bathrooms",
-        "Wet Room",
-        "Sky TV Wiring",
-        "10-Year Building Warranty"
+        "Wood Flooring",
+        "Wet Room"
       ],
       "location": "Crofton Road Orpington BR6",
       "picture": "images/prop2pic1small.png",
@@ -58,15 +52,13 @@
       "sqft": 800,
       "price": 325000,
       "tenure": "Freehold",
-      "description": "Charming two bedroom period cottage nestled in a quiet village location. The property features exposed wooden beams, a cosy living room with a fireplace, a country-style kitchen, and a private cottage garden. Ideal for first-time buyers or those seeking a peaceful rural lifestyle with easy access to nearby market towns.",
+      "description": "Charming two bedroom period cottage nestled in a quiet village location. The property features exposed wooden beams, a cosy living room with a fireplace, a country-style kitchen, and a private cottage garden...",
       "features": [
-        "Period Cottage",
-        "Exposed Wooden Beams",
+        "Period Features",
+        "Exposed Beams",
         "Fireplace",
-        "Country-Style Kitchen",
         "Private Garden",
-        "Village Location",
-        "Character Features"
+        "Village Setting"
       ],
       "location": "High Street, Chilham, Canterbury CT4",
       "picture": "images/prop3pic1small.jpg",
@@ -81,16 +73,13 @@
       "sqft": 550,
       "price": 275000,
       "tenure": "Leasehold",
-      "description": "A bright and modern one bedroom top-floor apartment ideally situated for local shops, restaurants and Petts Wood Station. The property features an open-plan living room with a contemporary fitted kitchen, a spacious double bedroom with fitted wardrobes and a stylish bathroom. Additional benefits include gas central heating, double glazing throughout, and allocated parking. Ideal for first-time buyers or investors.",
+      "description": "A bright and modern one bedroom top-floor apartment ideally situated for local shops, restaurants and Petts Wood Station...",
       "features": [
-        "Top-Floor Apartment",
+        "Top-Floor",
         "Open-Plan Kitchen",
         "Fitted Wardrobes",
         "Allocated Parking",
-        "Gas Central Heating",
-        "Double Glazing",
-        "Close to Station",
-        "Ideal for First-Time Buyers"
+        "Gas Central Heating"
       ],
       "location": "Lakeswood Road, Petts Wood BR5",
       "picture": "images/prop4pic1small.jpg",
@@ -105,15 +94,13 @@
       "sqft": 2100,
       "price": 685000,
       "tenure": "Freehold",
-      "description": "Spacious four-bedroom villa offering generous living accommodation in a desirable residential location. The property features a large open-plan kitchen and dining area, multiple reception spaces, private garden, and secure access. Ideal for families or buyers seeking a premium home with privacy and modern design.",
+      "description": "Spacious four-bedroom villa offering generous living accommodation in a desirable residential location...",
       "features": [
-        "Open-Plan Kitchen & Dining",
-        "Multiple Reception Rooms",
         "Private Garden",
+        "Open-Plan Kitchen",
+        "Multiple Living Areas",
         "Secure Access",
-        "Spacious Layout",
-        "Modern Design",
-        "Family-Friendly"
+        "Modern Design"
       ],
       "location": "Dock Street, Leeds LS10",
       "picture": "images/prop5pic1small.jpg",
@@ -128,14 +115,11 @@
       "sqft": 2600,
       "price": 1150000,
       "tenure": "Freehold",
-      "description": "A spacious four-bedroom detached family house located on a prestigious road, within close proximity to Bromley South and highly regarded schools. The property features generous living areas, including a luxury open-plan kitchen and dining room, three reception rooms, utility room, and ground-floor cloakroom. The first floor comprises four well-proportioned bedrooms, two with en-suite bathrooms, plus a family bathroom. Additional highlights include a landscaped rear garden, double garage, and off-street parking for multiple vehicles, making it ideal for families seeking comfort, space, and style.",
+      "description": "A spacious four-bedroom detached family house located on a prestigious road...",
       "features": [
-        "Detached House",
-        "Luxury Open-Plan Kitchen",
-        "Three Reception Rooms",
-        "Utility Room",
-        "Cloakroom",
-        "Two En-Suite Bedrooms",
+        "Detached",
+        "Open-Plan Kitchen",
+        "En-Suite Bedrooms",
         "Landscaped Garden",
         "Double Garage",
         "Off-Street Parking"
@@ -153,15 +137,13 @@
       "sqft": 3200,
       "price": 1250000,
       "tenure": "Freehold",
-      "description": "A luxurious five-bedroom villa set in an exclusive residential area. The property boasts spacious open-plan living areas, a modern kitchen with high-end appliances, multiple private balconies, a landscaped garden, and secure parking. Ideal for families seeking upscale, private living with convenient access to local amenities and transport links.",
+      "description": "A luxurious five-bedroom villa set in an exclusive residential area...",
       "features": [
-        "Luxury Villa",
-        "Open-Plan Living Areas",
-        "High-End Appliances",
+        "Luxury Finish",
         "Private Balconies",
         "Landscaped Garden",
         "Secure Parking",
-        "Exclusive Residential Area"
+        "Exclusive Location"
       ],
       "location": "Oakwood Drive, Wilmslow SK9",
       "picture": "images/prop7pic1small.jpg",
