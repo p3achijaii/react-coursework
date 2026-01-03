@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import Input from "../components/ui/Input";
 import Select from "../components/ui/Select";
 import Button from "../components/ui/Button";
 import styles from "./SearchFilters.module.css";
 
 function SearchFilters({ filters, setFilters }) {
+  const [newFilters, setNewFilters] = useState(filters);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
 
@@ -15,10 +17,14 @@ function SearchFilters({ filters, setFilters }) {
       return;
     }
 
-    setFilters((prev) => ({
+    setNewFilters((prev) => ({
       ...prev,
       [name]: value,
     }));
+  };
+
+  const handleSearch = (e) => {
+    setFilters(newFilters);
   };
 
   const handleReset = () => {
@@ -40,7 +46,7 @@ function SearchFilters({ filters, setFilters }) {
         <Select
           label="Property Type"
           name="type"
-          value={filters.type}
+          value={newFilters.type}
           onChange={handleChange}
           options={[
             { value: "", label: "Any" },
@@ -58,7 +64,7 @@ function SearchFilters({ filters, setFilters }) {
             type="number"
             min="0"
             placeholder="£0"
-            value={filters.minPrice}
+            value={newFilters.minPrice}
             onChange={handleChange}
           />
 
@@ -68,7 +74,7 @@ function SearchFilters({ filters, setFilters }) {
             type="number"
             min="0"
             placeholder="£1,000,000+"
-            value={filters.maxPrice}
+            value={newFilters.maxPrice}
             onChange={handleChange}
           />
         </div>
@@ -80,7 +86,7 @@ function SearchFilters({ filters, setFilters }) {
             type="number"
             min="0"
             placeholder="1"
-            value={filters.beds}
+            value={newFilters.beds}
             onChange={handleChange}
           />
 
@@ -88,7 +94,7 @@ function SearchFilters({ filters, setFilters }) {
             label="Postcode / Area"
             name="postcode"
             placeholder="e.g. BR5"
-            value={filters.postcode}
+            value={newFilters.postcode}
             onChange={handleChange}
           />
         </div>
@@ -96,7 +102,7 @@ function SearchFilters({ filters, setFilters }) {
         <Select
           label="Date Added"
           name="dateAdded"
-          value={filters.dateAdded}
+          value={newFilters.dateAdded}
           onChange={handleChange}
           options={[
             { value: "", label: "Anytime" },
@@ -114,7 +120,9 @@ function SearchFilters({ filters, setFilters }) {
           >
             Reset
           </Button>
-          <Button className={styles.searchBtn}>Search</Button>
+          <Button className={styles.searchBtn} onClick={handleSearch}>
+            Search
+          </Button>
         </div>
       </div>
     </div>
