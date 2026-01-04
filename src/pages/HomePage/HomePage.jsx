@@ -10,41 +10,41 @@ import PropertyCard from "../../components/PropertyCard";
 import styles from "./HomePage.module.css";
 
 function HomePage() {
-  const [featuredProperties, setFeaturedProperties] = useState([]);
-  const featuresRef = useRef(null);
+  const [featuredProperties, setFeaturedProperties] = useState([]); // State for featured properties
+  const featuresRef = useRef(null); // Ref for features section to trigger animation
 
   useEffect(() => {
-    fetch("/properties.json")
+    fetch("/properties.json") // Fetch properties data
       .then((res) => {
         if (!res.ok) {
-          throw new Error("Failed to fetch properties");
+          throw new Error("Failed to fetch properties"); // Handle fetch errors
         }
-        return res.json();
+        return res.json(); // Parse JSON
       })
       .then((data) => {
-        setFeaturedProperties(data.properties.slice(0, 3));
+        setFeaturedProperties(data.properties.slice(0, 3)); // Take first 3 as featured
       })
       .catch((err) => {
-        console.error("Failed to load properties:", err);
+        console.error("Failed to load properties:", err); // Log fetch errors
       });
-  }, []);
+  }, []); // Run once on mount
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add(styles.inView);
-          observer.disconnect();
+          entry.target.classList.add(styles.inView); // Trigger animation when in view
+          observer.disconnect(); // Stop observing after animation
         }
       },
-      { threshold: 0.3 }
+      { threshold: 0.3 } // Trigger when 30% of section visible
     );
 
     if (featuresRef.current) {
-      observer.observe(featuresRef.current);
+      observer.observe(featuresRef.current); // Observe features section
     }
 
-    return () => observer.disconnect();
+    return () => observer.disconnect(); // Cleanup on unmount
   }, []);
 
   return (
@@ -145,7 +145,7 @@ function HomePage() {
 
           <div className={styles.propertiesGrid}>
             {featuredProperties.map((property) => (
-              <PropertyCard key={property.id} property={property} />
+              <PropertyCard key={property.id} property={property} /> // Render each featured property
             ))}
           </div>
 
