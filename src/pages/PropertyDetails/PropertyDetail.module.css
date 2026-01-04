@@ -129,6 +129,24 @@
   margin-bottom: 0.25rem;
 }
 
+@media (max-width: 640px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .priceContainer {
+    align-self: flex-start;
+  }
+
+  .mapIcon {
+    width: 22px;
+    height: 22px;
+    color: var(--color-terracotta-600);
+  }
+}
+
 .typeTag {
   background-color: #beccda;
   color: var(--color-stone-800);
@@ -156,6 +174,45 @@
 
 .statItem + .statItem {
   border-left: 1px solid var(--color-cream-200);
+}
+
+@media (max-width: 640px) {
+  .statsGrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    border-top: 1px solid var(--color-cream-200);
+    border-bottom: 1px solid var(--color-cream-200);
+  }
+
+  .statItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.25rem 0;
+    text-align: center;
+  }
+
+  .statItem + .statItem {
+    border-left: 1px solid var(--color-cream-200);
+  }
+
+  .statIcon {
+    height: 2.25rem;
+    width: 2.25rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .statValue {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--color-stone-800);
+  }
+
+  .statLabel {
+    font-size: 1rem;
+    color: var(--color-stone-500);
+  }
 }
 
 .statIcon {
@@ -290,6 +347,31 @@
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
+.locationSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: var(--color-white);
+  border-radius: var(--radius-xl);
+}
+
+/* MAP */
+.mapFrame {
+  width: 100%;
+  height: 400px;
+  border: 0;
+  border-radius: var(--radius-xl);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* ADDRESS */
+.address {
+  font-size: 0.95rem;
+  color: var(--color-stone-600);
+  padding-left: 0.25rem;
+  line-height: 1.4;
+}
+
 .tabs {
   display: flex;
   gap: 0.5rem;
@@ -348,10 +430,37 @@
   border-radius: var(--radius-full);
 }
 
-@media (min-width: 768px) {
+@media (max-width: 640px) {
+  .tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
   .tabs button {
-    font-size: 1rem;
-    padding: 0.6rem 1.5rem;
+    flex: 1 1 auto;
+    padding: 0.75rem 1.25rem;
+    font-size: 0.9rem;
+    border-radius: 999px;
+    background-color: var(--color-cream-100);
+    color: var(--color-stone-700);
+    border: 1px solid var(--color-cream-300);
+    text-align: center;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  .tabs button:hover {
+    background-color: var(--color-terracotta-100);
+  }
+
+  .activeTab {
+    background-color: var(--color-terracotta-600);
+    color: var(--color-white);
+    border-color: var(--color-terracotta-600);
+  }
+
+  .activeTab::after {
+    display: none;
   }
 }
 
