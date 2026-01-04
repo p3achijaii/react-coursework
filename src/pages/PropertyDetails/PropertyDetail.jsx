@@ -15,39 +15,41 @@ import ImageLightbox from "../../components/ImageLightBox";
 import styles from "./PropertyDetail.module.css";
 
 function PropertyDetail() {
-  const { id } = useParams();
-  const [property, setProperty] = useState(null);
-  const [currentTab, setCurrentTab] = useState("details");
+  const { id } = useParams(); // Get property ID from URL
+  const [property, setProperty] = useState(null); // Store property data
+  const [currentTab, setCurrentTab] = useState("details"); // Track active tab
 
-  const [lightboxOpen, setLightboxOpen] = useState(false);
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [lightboxOpen, setLightboxOpen] = useState(false); // Image lightbox state
+  const [currentImageIndex, setCurrentImageIndex] = useState(0); // Current lightbox image
 
-  const [showFullDescription, setShowFullDescription] = useState(false);
+  const [showFullDescription, setShowFullDescription] = useState(false); // Toggle description
 
   const openLightbox = (index) => {
-    setCurrentImageIndex(index);
-    setLightboxOpen(true);
+    setCurrentImageIndex(index); // Set current image
+    setLightboxOpen(true); // Open lightbox
   };
 
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(false); // Detect mobile screen
 
   useEffect(() => {
-    const handleResize = () => setIsMobile(window.innerWidth <= 768);
-    handleResize(); // initial check
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    const handleResize = () => setIsMobile(window.innerWidth <= 768); // Update mobile state
+    handleResize(); // Initial check
+    window.addEventListener("resize", handleResize); // Listen for resize
+    return () => window.removeEventListener("resize", handleResize); // Cleanup
   }, []);
 
+  // Fetch property data from JSON
   useEffect(() => {
     fetch("/properties.json")
       .then((res) => res.json())
       .then((data) => {
-        const found = data.properties.find((p) => p.id === id);
+        const found = data.properties.find((p) => p.id === id); // Find property by ID
         setProperty(found);
       })
       .catch((err) => console.error("Failed to load property:", err));
   }, [id]);
 
+  // Show fallback if property not found
   if (!property) {
     return (
       <div className="min-h-screen flex items-center justify-center">
@@ -69,9 +71,9 @@ function PropertyDetail() {
           <img
             src={property.picture[0]}
             alt={`Property at ${property.location}`}
-            className={styles.heroImage}
+            className={styles.heroImage} // Main hero image
           />
-          <div className={styles.heroOverlay} />
+          <div className={styles.heroOverlay} /> {/* Dark overlay */}
           <div className={styles.viewPhotosBtn}>
             <Button variant="secondary">View Photos</Button>
           </div>
@@ -89,16 +91,17 @@ function PropertyDetail() {
                   <h1 className={styles.title}>{property.title}</h1>
                   <div className={styles.address}>
                     <MapPin className={styles.mapIcon} />
-                    {property.location}
+                    {property.location} {/* Property location */}
                   </div>
                 </div>
                 <div className={styles.priceContainer}>
                   <div className={styles.price}>
-                    £{property.price.toLocaleString()}
+                    £{property.price.toLocaleString()} {/* Formatted price */}
                   </div>
                   <div className={styles.typeTag}>
                     {property.type}{" "}
-                    {property.tenure ? `• ${property.tenure}` : ""}
+                    {property.tenure ? `• ${property.tenure}` : ""}{" "}
+                    {/* Type & tenure */}
                   </div>
                 </div>
               </div>
@@ -122,6 +125,7 @@ function PropertyDetail() {
                 </div>
               </div>
 
+              {/* DATE ADDED */}
               {property.added && (
                 <div className={styles.dateAdded}>
                   <Calendar className={styles.calendarIcon} />
@@ -187,7 +191,6 @@ function PropertyDetail() {
                             property.description || "No description available",
                         }}
                       />
-
                       {property.description && (
                         <button
                           className={styles.readMoreBtn}
@@ -211,7 +214,7 @@ function PropertyDetail() {
                             <div className={styles.checkIconWrapper}>
                               <Check className={styles.checkIcon} />
                             </div>
-                            {feature}
+                            {feature} {/* Feature label */}
                           </div>
                         ))}
                       </div>
@@ -230,7 +233,7 @@ function PropertyDetail() {
                             <img
                               src={img}
                               alt=""
-                              className={styles.galleryImage}
+                              className={styles.galleryImage} // Gallery image
                             />
                           </div>
                         ))}
@@ -247,7 +250,7 @@ function PropertyDetail() {
                       <img
                         src={property.floorplan}
                         alt={`Floorplan of ${property.title}`}
-                        className={styles.floorplanImage}
+                        className={styles.floorplanImage} // Floorplan image
                         onClick={() => openLightbox(property.picture.length)}
                       />
                     </div>
@@ -286,7 +289,7 @@ function PropertyDetail() {
                   <img
                     src={property.agent.image}
                     alt={property.agent.name}
-                    className={styles.agentImage}
+                    className={styles.agentImage} // Agent profile image
                   />
                   <div>
                     <h3 className={styles.agentName}>{property.agent.name}</h3>
@@ -294,6 +297,7 @@ function PropertyDetail() {
                   </div>
                 </div>
 
+                {/* Contact buttons */}
                 <div className={styles.contactButtons}>
                   <Button className={styles.contactBtn} size="lg">
                     <Phone className={styles.contactIcon} />
@@ -309,6 +313,7 @@ function PropertyDetail() {
                   </Button>
                 </div>
 
+                {/* Tour request form */}
                 <div className={styles.formContainer}>
                   <h4 className={styles.formTitle}>Interested?</h4>
                   <p className={styles.formText}>
@@ -342,14 +347,14 @@ function PropertyDetail() {
 
       {/* LIGHTBOX */}
       <ImageLightbox
-        isOpen={lightboxOpen}
-        onClose={() => setLightboxOpen(false)}
+        isOpen={lightboxOpen} // Open/close state
+        onClose={() => setLightboxOpen(false)} // Close lightbox
         images={[
           ...property.picture,
           ...(property.floorplan ? [property.floorplan] : []),
-        ]}
-        currentIndex={currentImageIndex}
-        onIndexChange={setCurrentImageIndex}
+        ]} // All images including floorplan
+        currentIndex={currentImageIndex} // Current image index
+        onIndexChange={setCurrentImageIndex} // Update index when navigating
       />
     </div>
   );
