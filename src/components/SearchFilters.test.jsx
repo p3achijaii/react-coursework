@@ -1,6 +1,6 @@
 import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
-import SearchFilters from "../SearchFilters";
+import SearchFilters from "./SearchFilters";
 
 // Group all tests related to the SearchFilters component
 describe("SearchFilters component", () => {
