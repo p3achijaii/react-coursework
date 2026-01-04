@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import styles from "../components/ImageLightBox.module.css";
 
-function ImageLightbox({
+function ImageLightBox({
   isOpen,
   onClose,
   images,
@@ -81,4 +81,4 @@ function ImageLightbox({
   );
 }
 
-export default ImageLightbox;
+export default ImageLightBox;

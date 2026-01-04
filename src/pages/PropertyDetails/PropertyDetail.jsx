@@ -11,7 +11,7 @@ import {
   Mail,
 } from "lucide-react";
 import Button from "../../components/ui/Button";
-import ImageLightbox from "../../components/ImageLightbox";
+import ImageLightbox from "../../components/ImageLightBox";
 import styles from "./PropertyDetail.module.css";
 
 function PropertyDetail() {
