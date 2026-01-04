@@ -5,22 +5,23 @@ import { formatPrice } from "../components/utils";
 import { cn } from "../components/utils";
 import styles from "./FavoritesSidebar.module.css";
 
-function FavoritesSidebar() {
+const DEFAULT_IMAGE = "/images/default.png";
+
+function FavoritesSidebar({ allProperties = [] }) {
   const [isOpen, setIsOpen] = useState(false);
   const [isDragOver, setIsDragOver] = useState(false);
 
   const { favorites, addFavorite, removeFavorite, clearFavorites } =
     useFavorites();
 
+  // Drag and drop handlers
   const handleDragOver = (e) => {
     e.preventDefault();
     e.dataTransfer.dropEffect = "copy";
     setIsDragOver(true);
   };
 
-  const handleDragLeave = () => {
-    setIsDragOver(false);
-  };
+  const handleDragLeave = () => setIsDragOver(false);
 
   const handleDrop = (e) => {
     e.preventDefault();
@@ -29,25 +30,38 @@ function FavoritesSidebar() {
     try {
       const data = e.dataTransfer.getData("application/json");
       if (data) {
-        addFavorite(JSON.parse(data));
+        const dropped = JSON.parse(data);
+
+        const property = allProperties.find((p) => p.id === dropped.id) || {
+          id: dropped.id,
+          picture: dropped.picture || [DEFAULT_IMAGE],
+          location: dropped.location || "Unknown",
+          price: dropped.price || 0,
+          type: dropped.type || "",
+          tenure: dropped.tenure || "",
+        };
+
+        if (!Array.isArray(property.picture)) {
+          property.picture = [property.picture || DEFAULT_IMAGE];
+        }
+
+        addFavorite(property);
       }
     } catch (err) {
       console.error("Invalid drop data", err);
     }
   };
 
+  // Clear all favorites
   const handleClearAll = () => {
-    const confirmed = window.confirm(
-      "Are you sure you want to remove all favourites?"
-    );
-    if (confirmed) {
+    if (window.confirm("Are you sure you want to remove all favourites?")) {
       clearFavorites();
     }
   };
 
   return (
     <div className={cn(styles.sidebar, isOpen && styles.sidebarOpen)}>
-      {/* Toggle */}
+      {/* Toggle button */}
       <button onClick={() => setIsOpen(!isOpen)} className={styles.toggleBtn}>
         <Heart
           size={24}
@@ -94,7 +108,9 @@ function FavoritesSidebar() {
             {favorites.map((property) => (
               <div key={property.id} className={styles.item}>
                 <img
-                  src={property.picture}
+                  src={
+                    (property.picture && property.picture[0]) || DEFAULT_IMAGE
+                  }
                   alt={property.location}
                   className={styles.itemImage}
                 />
