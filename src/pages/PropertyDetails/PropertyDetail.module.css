@@ -130,8 +130,8 @@
 }
 
 .typeTag {
-  background-color: var(--color-sage-100);
-  color: var(--color-sage-700);
+  background-color: #beccda;
+  color: var(--color-stone-800);
   padding: 0.25rem 0.75rem;
   border-radius: var(--radius-full);
   font-size: 0.875rem;
