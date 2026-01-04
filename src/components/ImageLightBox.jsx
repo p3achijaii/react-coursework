@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
-import styles from "./ImageLightbox.module.css";
+import styles from "../components/ImageLightBox.module.css";
 
 function ImageLightbox({
   isOpen,
