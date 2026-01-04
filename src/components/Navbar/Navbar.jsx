@@ -6,9 +6,10 @@ import { cn } from "../utils";
 import styles from "./Navbar.module.css";
 
 function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
-  const location = useLocation();
+  const [isOpen, setIsOpen] = useState(false); // State for mobile menu open/close
+  const location = useLocation(); // Get current route to highlight active link
 
+  // Navigation links
   const links = [
     { href: "/", label: "Home" },
     { href: "/find-property", label: "Find Property" },
@@ -23,9 +24,10 @@ function Navbar() {
           {/* LOGO */}
           <Link to="/" className={styles.logo}>
             <div className={styles.logoIcon}>
-              <HouseHeart className={styles.icon} />
+              <HouseHeart className={styles.icon} /> {/* Logo icon */}
             </div>
-            <span className={styles.logoText}>HoneyHomes</span>
+            <span className={styles.logoText}>HoneyHomes</span>{" "}
+            {/* Logo text */}
           </Link>
 
           {/* DESKTOP NAV */}
@@ -37,8 +39,8 @@ function Navbar() {
                 className={cn(
                   styles.link,
                   location.pathname === link.href
-                    ? styles.linkActive
-                    : styles.linkInactive
+                    ? styles.linkActive // Highlight active link
+                    : styles.linkInactive // Inactive links
                 )}
               >
                 {link.label}
@@ -53,10 +55,10 @@ function Navbar() {
 
           {/* MOBILE MENU BUTTON */}
           <button
-            className={cn(styles.mobileMenuBtn, isOpen && styles.open)}
-            onClick={() => setIsOpen(!isOpen)}
+            className={cn(styles.mobileMenuBtn, isOpen && styles.open)} // Animate button when open
+            onClick={() => setIsOpen(!isOpen)} // Toggle mobile menu
           >
-            <span className={styles.bar}></span>
+            <span className={styles.bar}></span> {/* Hamburger bar */}
             <span className={styles.bar}></span>
             <span className={styles.bar}></span>
           </button>
@@ -67,7 +69,7 @@ function Navbar() {
       <div
         className={cn(
           styles.mobileMenu,
-          isOpen ? styles.menuOpen : styles.menuClosed
+          isOpen ? styles.menuOpen : styles.menuClosed // Show/hide mobile menu
         )}
       >
         <div className={styles.mobileMenuContent}>
@@ -75,11 +77,11 @@ function Navbar() {
             <Link
               key={link.href}
               to={link.href}
-              onClick={() => setIsOpen(false)}
+              onClick={() => setIsOpen(false)} // Close menu on link click
               className={cn(
                 styles.mobileLink,
                 location.pathname === link.href
-                  ? styles.mobileLinkActive
+                  ? styles.mobileLinkActive // Highlight active link
                   : styles.mobileLinkInactive
               )}
             >
@@ -88,7 +90,8 @@ function Navbar() {
           ))}
           <div className={styles.mobileCta}>
             <Link to="/contact" onClick={() => setIsOpen(false)}>
-              <Button className={styles.fullWidthBtn}>Contact Us</Button>
+              <Button className={styles.fullWidthBtn}>Contact Us</Button>{" "}
+              {/* Mobile CTA */}
             </Link>
           </div>
         </div>

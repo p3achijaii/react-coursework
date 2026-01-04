@@ -5,11 +5,13 @@ import Button from "../components/ui/Button";
 import styles from "./SearchFilters.module.css";
 
 function SearchFilters({ filters, setFilters }) {
-  const [newFilters, setNewFilters] = useState(filters);
+  const [newFilters, setNewFilters] = useState(filters); // Local state for inputs
 
+  // Handle changes in inputs and selects
   const handleChange = (e) => {
     const { name, value } = e.target;
 
+    // Prevent negative values for certain numeric fields
     if (
       (name === "minPrice" || name === "maxPrice" || name === "beds") &&
       Number(value) < 0
@@ -19,14 +21,16 @@ function SearchFilters({ filters, setFilters }) {
 
     setNewFilters((prev) => ({
       ...prev,
-      [name]: value,
+      [name]: value, // Update specific field
     }));
   };
 
+  // Apply filters to parent component
   const handleSearch = (e) => {
     setFilters(newFilters);
   };
 
+  // Reset all filters to default
   const handleReset = () => {
     setFilters({
       type: "",
@@ -43,6 +47,7 @@ function SearchFilters({ filters, setFilters }) {
       <h2 className={styles.title}>Find a Property</h2>
 
       <div className={styles.grid}>
+        {/* Property Type Select */}
         <Select
           label="Property Type"
           name="type"
@@ -57,6 +62,7 @@ function SearchFilters({ filters, setFilters }) {
           ]}
         />
 
+        {/* Price Range Inputs */}
         <div className={styles.priceRange}>
           <Input
             label="Min Price"
@@ -79,6 +85,7 @@ function SearchFilters({ filters, setFilters }) {
           />
         </div>
 
+        {/* Bedrooms and Postcode Inputs */}
         <div className={styles.priceRange}>
           <Input
             label="Min Bedroom"
@@ -99,6 +106,7 @@ function SearchFilters({ filters, setFilters }) {
           />
         </div>
 
+        {/* Date Added Select */}
         <Select
           label="Date Added"
           name="dateAdded"
@@ -112,6 +120,7 @@ function SearchFilters({ filters, setFilters }) {
           ]}
         />
 
+        {/* Buttons for Reset and Search */}
         <div className={styles.buttonGroup}>
           <Button
             variant="ghost"
