@@ -259,6 +259,38 @@
   font-size: 1.125rem;
 }
 
+/* Mobile-only collapsed text */
+@media (max-width: 768px) {
+  .collapsedMobile {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .expanded {
+    display: block;
+  }
+
+  .readMoreBtn {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: var(--color-primary);
+    font-weight: 500;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+}
+
+/* Desktop: hide Read More button */
+@media (min-width: 769px) {
+  .readMoreBtn {
+    display: none;
+  }
+}
+
 .featuresGrid {
   display: grid;
   grid-template-columns: 1fr;

@@ -22,10 +22,21 @@ function PropertyDetail() {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
+  const [showFullDescription, setShowFullDescription] = useState(false);
+
   const openLightbox = (index) => {
     setCurrentImageIndex(index);
     setLightboxOpen(true);
   };
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth <= 768);
+    handleResize(); // initial check
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   useEffect(() => {
     fetch("/properties.json")
@@ -162,16 +173,34 @@ function PropertyDetail() {
                 {/* DETAILS TAB */}
                 {currentTab === "details" && (
                   <>
+                    {/* About This Home */}
                     <div className={styles.cardInner}>
                       <h2 className={styles.sectionTitle}>About This Home</h2>
                       <p
-                        className={styles.description}
+                        className={`${styles.description} ${
+                          isMobile && !showFullDescription
+                            ? styles.collapsedMobile
+                            : ""
+                        }`}
                         dangerouslySetInnerHTML={{
-                          __html: property.description,
+                          __html:
+                            property.description || "No description available",
                         }}
                       />
+
+                      {property.description && (
+                        <button
+                          className={styles.readMoreBtn}
+                          onClick={() =>
+                            setShowFullDescription((prev) => !prev)
+                          }
+                        >
+                          {showFullDescription ? "Show Less" : "Read More"}
+                        </button>
+                      )}
                     </div>
 
+                    {/* Features & Amenities */}
                     <div className={styles.cardInner}>
                       <h2 className={styles.sectionTitle}>
                         Features & Amenities
@@ -188,6 +217,7 @@ function PropertyDetail() {
                       </div>
                     </div>
 
+                    {/* Gallery */}
                     <div className={styles.cardInner}>
                       <h2 className={styles.sectionTitle}>Gallery</h2>
                       <div className={styles.galleryGrid}>
