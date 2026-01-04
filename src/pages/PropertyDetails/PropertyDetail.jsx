@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import Button from "../../components/ui/Button";
 import ImageLightbox from "../../components/ImageLightBox";
+// import MapView from "../../components/MapView";
 import styles from "./PropertyDetail.module.css";
 
 function PropertyDetail() {
