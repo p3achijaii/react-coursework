@@ -275,12 +275,26 @@
   .readMoreBtn {
     display: inline-block;
     margin-top: 0.5rem;
-    color: var(--color-primary);
-    font-weight: 500;
-    background: none;
+    padding: 0.5rem 1rem;
+    background-color: var(--color-terracotta-500);
+    color: var(--color-white);
+    font-weight: 600;
+    font-size: 0.95rem;
+    border-radius: var(--radius-lg);
     border: none;
     cursor: pointer;
-    padding: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+  }
+
+  .readMoreBtn:hover {
+    background-color: var(--color-terracotta-600);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .readMoreBtn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(222, 129, 101, 0.4);
   }
 }
 
