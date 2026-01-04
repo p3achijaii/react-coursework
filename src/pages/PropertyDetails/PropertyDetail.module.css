@@ -294,7 +294,7 @@
 
   .readMoreBtn:focus {
     outline: none;
-    box-shadow: 0 0 0 3px rgba(222, 129, 101, 0.4);
+    box-shadow: none;
   }
 }
 
@@ -609,4 +609,23 @@
 
 .submitBtn {
   width: 100%;
+}
+
+.favoriteBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 1rem;
+  transition: color 0.2s;
+  color: #999;
+}
+.favoriteBtn:hover {
+  color: #e63946;
+}
+.favorited {
+  color: #e63946;
+}
+.backButtonWrapper {
+  margin: 2rem 0;
+  text-align: center;
 }
