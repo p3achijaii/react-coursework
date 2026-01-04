@@ -1,3 +1,5 @@
+PROPERTYDETAIL;
+
 import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import {
@@ -12,7 +14,6 @@ import {
 } from "lucide-react";
 import Button from "../../components/ui/Button";
 import ImageLightbox from "../../components/ImageLightBox";
-// import MapView from "../../components/MapView";
 import styles from "./PropertyDetail.module.css";
 
 function PropertyDetail() {
@@ -226,16 +227,23 @@ function PropertyDetail() {
                 )}
 
                 {/* LOCATION TAB */}
-                {currentTab === "location" && property.map && (
-                  <div className={styles.cardInner}>
-                    <h2 className={styles.sectionTitle}>Location</h2>
-                    {/* Map component, uncomment when ready */}
-                    {/* <MapView
-                      lat={property.map.lat}
-                      lng={property.map.lng}
-                      address={property.location}
-                    /> */}
-                    <div className={styles.placeholder}>Map placeholder</div>
+                {currentTab === "location" && (
+                  <div className={styles.locationSection}>
+                    {property.mapUrl ? (
+                      <iframe
+                        src={property.mapUrl}
+                        width="100%"
+                        height="400"
+                        style={{ border: 0, borderRadius: "12px" }}
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                        title="Property location map"
+                      />
+                    ) : (
+                      <p>Map data unavailable</p>
+                    )}
+
+                    <p className={styles.address}>{property.location}</p>
                   </div>
                 )}
               </div>
