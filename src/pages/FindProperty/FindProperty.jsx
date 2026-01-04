@@ -5,7 +5,10 @@ import FavoritesSidebar from "../../components/FavoritesSidebar";
 import styles from "./FindProperty.module.css";
 
 function FindProperty() {
+  // State to hold all properties
   const [properties, setProperties] = useState([]);
+
+  // State for filters applied by user
   const [filters, setFilters] = useState({
     type: "",
     minPrice: "",
@@ -15,7 +18,7 @@ function FindProperty() {
     dateAdded: "",
   });
 
-  // Load properties from JSON
+  // Load properties from JSON file when component mounts
   useEffect(() => {
     fetch("/properties.json")
       .then((res) => res.json())
@@ -23,7 +26,7 @@ function FindProperty() {
       .catch((err) => console.error("Failed to load properties:", err));
   }, []);
 
-  // Filter properties
+  // Compute filtered properties whenever filters or properties change
   const filteredProperties = useMemo(() => {
     const monthMap = {
       January: 0,
@@ -41,20 +44,20 @@ function FindProperty() {
     };
 
     return properties.filter((property) => {
-      // Type filter
+      // Filter by property type
       if (filters.type && property.type !== filters.type) return false;
 
-      // Price filters
+      // Filter by min/max price
       if (filters.minPrice && property.price < Number(filters.minPrice))
         return false;
       if (filters.maxPrice && property.price > Number(filters.maxPrice))
         return false;
 
-      // Bedrooms filter
+      // Filter by number of bedrooms
       if (filters.beds && property.bedrooms < Number(filters.beds))
         return false;
 
-      // Postcode / location filter
+      // Filter by postcode/location
       if (
         filters.postcode &&
         !property.location
@@ -63,7 +66,7 @@ function FindProperty() {
       )
         return false;
 
-      // Date Added filter
+      // Filter by date added (properties added within X days)
       if (filters.dateAdded) {
         const addedDate = new Date(
           property.added.year,
@@ -76,12 +79,13 @@ function FindProperty() {
         if (daysAgo > Number(filters.dateAdded)) return false;
       }
 
-      return true;
+      return true; // Property passes all filters
     });
   }, [filters, properties]);
 
   return (
     <div className={styles.page}>
+      {/* Sidebar showing user's favorite properties */}
       <FavoritesSidebar />
 
       <div className={styles.container}>
@@ -93,19 +97,21 @@ function FindProperty() {
         </div>
 
         <div className={styles.content}>
-          {/* FILTERS */}
+          {/* FILTERS PANEL */}
           <aside>
             <SearchFilters filters={filters} setFilters={setFilters} />
           </aside>
 
-          {/* RESULTS */}
+          {/* PROPERTY RESULTS */}
           <main>
             <div className={styles.resultsHeader}>
+              {/* Show count of filtered properties */}
               <h2 className={styles.resultsCount}>
                 {filteredProperties.length} Properties Found
               </h2>
             </div>
 
+            {/* Display property cards if found, else empty state */}
             {filteredProperties.length > 0 ? (
               <div className={styles.resultsGrid}>
                 {filteredProperties.map((property) => (
