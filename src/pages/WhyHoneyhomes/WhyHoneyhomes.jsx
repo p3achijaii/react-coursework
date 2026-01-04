@@ -7,16 +7,17 @@ import section2 from "../../assets/section2.png";
 import styles from "./WhyHoneyhomes.module.css";
 
 function WhyHoneyhomes() {
-  const statsRef = useRef(null);
-  const [hasAnimated, setHasAnimated] = useState(false);
+  const statsRef = useRef(null); // Ref for the stats section to trigger animation
+  const [hasAnimated, setHasAnimated] = useState(false); // Track if stats have animated
 
   const [stats, setStats] = useState({
-    homes: 0,
-    satisfaction: 0,
-    years: 0,
+    homes: 0, // Number of homes sold
+    satisfaction: 0, // Client satisfaction %
+    years: 0, // Years of experience
   });
 
   useEffect(() => {
+    // Function to animate a stat from 0 to target value
     const animateValue = (key, end, duration = 1200) => {
       let startTime = null;
 
@@ -25,38 +26,39 @@ function WhyHoneyhomes() {
         const progress = Math.min((timestamp - startTime) / duration, 1);
         const value = Math.floor(progress * end);
 
-        setStats((prev) => ({ ...prev, [key]: value }));
+        setStats((prev) => ({ ...prev, [key]: value })); // Update state
 
         if (progress < 1) {
-          requestAnimationFrame(step);
+          requestAnimationFrame(step); // Continue animation
         }
       };
 
-      requestAnimationFrame(step);
+      requestAnimationFrame(step); // Start animation
     };
 
+    // Intersection Observer to trigger animation when stats section enters view
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting && !hasAnimated) {
-          animateValue("homes", 2500);
-          animateValue("satisfaction", 90);
-          animateValue("years", 20);
-          setHasAnimated(true);
+          animateValue("homes", 2500); // Animate homes sold
+          animateValue("satisfaction", 90); // Animate client satisfaction
+          animateValue("years", 20); // Animate years of experience
+          setHasAnimated(true); // Ensure it only animates once
         }
       },
       { threshold: 0.3 }
     );
 
     if (statsRef.current) {
-      observer.observe(statsRef.current);
+      observer.observe(statsRef.current); // Start observing stats section
     }
 
-    return () => observer.disconnect();
+    return () => observer.disconnect(); // Cleanup observer on unmount
   }, [hasAnimated]);
 
   return (
     <div className={styles.page}>
-      {/* HERO */}
+      {/* HERO SECTION */}
       <section className={styles.hero}>
         <div className={styles.container}>
           <h1 className={styles.heroTitle}>Why Choose HoneyHomes?</h1>
@@ -67,10 +69,11 @@ function WhyHoneyhomes() {
         </div>
       </section>
 
-      {/* SECTION 1 */}
+      {/* SECTION 1 - Expertise */}
       <section className={styles.section}>
         <div className={styles.container}>
           <div className={styles.grid}>
+            {/* Image on left */}
             <div className={styles.imageContainer}>
               <img
                 src={section1}
@@ -79,6 +82,7 @@ function WhyHoneyhomes() {
               />
             </div>
 
+            {/* Text content on right */}
             <div>
               <h2 className={styles.contentTitle}>Expertise You Can Trust</h2>
               <p className={styles.contentText}>
@@ -96,10 +100,11 @@ function WhyHoneyhomes() {
         </div>
       </section>
 
-      {/* STATS */}
+      {/* STATS SECTION */}
       <section ref={statsRef} className={styles.statsSection}>
         <div className={styles.container}>
           <div className={styles.statsGrid}>
+            {/* Homes Sold */}
             <div>
               <div className={styles.statValue}>
                 {stats.homes.toLocaleString()}+
@@ -107,11 +112,13 @@ function WhyHoneyhomes() {
               <div className={styles.statLabel}>Homes Sold</div>
             </div>
 
+            {/* Client Satisfaction */}
             <div>
               <div className={styles.statValue}>{stats.satisfaction}%</div>
               <div className={styles.statLabel}>Client Satisfaction</div>
             </div>
 
+            {/* Years Experience */}
             <div>
               <div className={styles.statValue}>{stats.years}+</div>
               <div className={styles.statLabel}>Years Experience</div>
@@ -120,10 +127,11 @@ function WhyHoneyhomes() {
         </div>
       </section>
 
-      {/* SECTION 2 */}
+      {/* SECTION 2 - Personal Approach */}
       <section className={styles.section}>
         <div className={styles.container}>
           <div className={styles.grid}>
+            {/* Text content on left */}
             <div>
               <h2 className={styles.contentTitle}>A Personal Approach</h2>
               <p className={styles.contentText}>
@@ -139,6 +147,7 @@ function WhyHoneyhomes() {
               </Link>
             </div>
 
+            {/* Image on right */}
             <div className={styles.imageContainer}>
               <img
                 src={section2}
