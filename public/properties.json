@@ -19,10 +19,7 @@
         "Nearby Transport"
       ],
       "location": "Petts Wood Road, Petts Wood, Orpington BR5",
-      "map": {
-        "lat": 51.3906,
-        "lng": 0.0734
-      },
+      "mapUrl": "https://www.google.com/maps?q=51.3906,0.0734&output=embed",
       "picture": [
         "/images/prop1/prop1pic1small.png",
         "/images/prop1/prop1bath.jpg",
@@ -62,10 +59,7 @@
         "Wet Room"
       ],
       "location": "Crofton Road Orpington BR6",
-      "map": {
-        "lat": 51.3739,
-        "lng": 0.0867
-      },
+      "mapUrl": "https://www.google.com/maps?q=51.3739,0.0867&output=embed",
       "picture": [
         "/images/prop2/prop2pic1small.png",
         "/images/prop2/prop2balcony.jpg",
@@ -104,10 +98,7 @@
         "Village Setting"
       ],
       "location": "High Street, Chilham, Canterbury CT4",
-      "map": {
-        "lat": 51.1854,
-        "lng": 0.9841
-      },
+      "mapUrl": "https://www.google.com/maps?q=51.1854,0.9841&output=embed",
       "picture": [
         "/images/prop3/prop3pic1small.jpg",
         "/images/prop3/prop3bath.jpg",
@@ -146,10 +137,7 @@
         "Gas Central Heating"
       ],
       "location": "Lakeswood Road, Petts Wood BR5",
-      "map": {
-        "lat": 51.3882,
-        "lng": 0.0758
-      },
+      "mapUrl": "https://www.google.com/maps?q=51.3882,0.0758&output=embed",
       "picture": [
         "/images/prop4/prop4pic1small.jpg",
         "/images/prop4/prop4balcony.jpeg",
@@ -187,10 +175,7 @@
         "Modern Design"
       ],
       "location": "Dock Street, Leeds LS10",
-      "map": {
-        "lat": 53.7906,
-        "lng": -1.5303
-      },
+      "mapUrl": "https://www.google.com/maps?q=53.7906,-1.5303&output=embed",
       "picture": [
         "/images/prop5/prop5pic1small.jpg",
         "/images/prop5/prop5bath.jpg",
@@ -230,10 +215,7 @@
         "Off-Street Parking"
       ],
       "location": "Ridgeway Drive, Bromley BR2",
-      "map": {
-        "lat": 51.3999,
-        "lng": 0.0226
-      },
+      "mapUrl": "https://www.google.com/maps?q=51.3999,0.0226&output=embed",
       "picture": [
         "/images/prop6/prop6pic1small.jpg",
         "/images/prop6/prop6bath.jpg",
@@ -272,10 +254,7 @@
         "Exclusive Location"
       ],
       "location": "Oakwood Drive, Wilmslow SK9",
-      "map": {
-        "lat": 53.3261,
-        "lng": -2.2315
-      },
+      "mapUrl": "https://www.google.com/maps?q=53.3261,-2.2315&output=embed",
       "picture": [
         "/images/prop7/prop7pic1small.jpg",
         "/images/prop7/prop7activity.jpeg",
