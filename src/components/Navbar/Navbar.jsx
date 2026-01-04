@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, HouseHeart } from "lucide-react";
+import { HouseHeart } from "lucide-react";
 import Button from "../ui/Button";
 import { cn } from "../utils";
 import styles from "./Navbar.module.css";
@@ -28,7 +28,7 @@ function Navbar() {
             <span className={styles.logoText}>HoneyHomes</span>
           </Link>
 
-          {/* DESKTOP NAVIGATION */}
+          {/* DESKTOP NAV */}
           <div className={styles.desktopNav}>
             {links.map((link) => (
               <Link
@@ -44,7 +44,6 @@ function Navbar() {
                 {link.label}
               </Link>
             ))}
-
             <Link to="/contact">
               <Button size="sm" variant="primary">
                 Contact Us
@@ -53,14 +52,14 @@ function Navbar() {
           </div>
 
           {/* MOBILE MENU BUTTON */}
-          <div className="md:hidden">
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className={styles.mobileMenuBtn}
-            >
-              {isOpen ? "x" : "☰"}
-            </button>
-          </div>
+          <button
+            className={cn(styles.mobileMenuBtn, isOpen && styles.open)}
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            <span className={styles.bar}></span>
+            <span className={styles.bar}></span>
+            <span className={styles.bar}></span>
+          </button>
         </div>
       </div>
 
@@ -87,7 +86,6 @@ function Navbar() {
               {link.label}
             </Link>
           ))}
-
           <div className={styles.mobileCta}>
             <Link to="/contact" onClick={() => setIsOpen(false)}>
               <Button className={styles.fullWidthBtn}>Contact Us</Button>
